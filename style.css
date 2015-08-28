@@ -1,5 +1,5 @@
 /*
-Theme Name: wooecomerce-bootstrap
+Theme Name: ExtremeGoldTeam
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -19,3 +19,257 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
+/* line 23, style.scss */
+#page {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #606060;
+  text-align: center;
+}
+/* line 1, _header.scss */
+#page #header {
+  position: relative;
+}
+/* line 4, _header.scss */
+#page #header nav {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+/* line 10, _header.scss */
+#page #header nav .container ul {
+  margin: 0;
+}
+/* line 12, _header.scss */
+#page #header nav .container ul li {
+  list-style: none;
+  float: left;
+}
+/* line 16, _header.scss */
+#page #header nav .container ul li a {
+  display: inline-block;
+  padding: 10px;
+  color: #FFFFFF;
+}
+/* line 26, _header.scss */
+#page #header nav.menu-aux {
+  top: 0;
+}
+/* line 28, _header.scss */
+#page #header nav.menu-aux .dados-topo {
+  padding-left: 0;
+}
+/* line 31, _header.scss */
+#page #header nav.menu-aux .dados-topo li {
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: small;
+}
+/* line 37, _header.scss */
+#page #header nav.menu-aux .dados-topo-vermelho {
+  padding-left: 0;
+}
+/* line 39, _header.scss */
+#page #header nav.menu-aux .dados-topo-vermelho li {
+  padding: 10px;
+  color: #9e151a;
+  font-size: small;
+}
+/* line 46, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 22px;
+  text-align: left;
+  list-style: none;
+  float: right;
+  padding-left: 10px;
+}
+/* line 56, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header li:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 61, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header a {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+}
+/* line 67, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header .youtube {
+  background-image: url("images/redes-sociais1.png");
+  background-position: left,center;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+}
+/* line 76, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header .instagram {
+  background-image: url("images/redes-sociais1.png");
+  background-position: -26px,center;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+}
+/* line 85, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header .twitter {
+  background-image: url("images/redes-sociais1.png");
+  background-position: -52px,center;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+}
+/* line 94, _header.scss */
+#page #header nav.menu-aux .redes_sociais_header .facebook {
+  background-image: url("images/redes-sociais1.png");
+  background-position: -80px,center;
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 20px;
+  display: inline-block;
+}
+/* line 105, _header.scss */
+#page #header nav.menu-principal {
+  top: 38px;
+  background-color: #9e151a;
+}
+/* line 110, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo {
+  float: left;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+/* line 116, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li {
+  width: 100%;
+}
+/* line 118, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a {
+  width: 100%;
+  color: #606060;
+  padding: 15px;
+}
+/* line 123, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a:hover {
+  background-color: #f0f2f4;
+}
+/* line 130, _header.scss */
+#page #header nav.menu-principal .container .logo-header {
+  padding: 7px;
+  margin-right: 20px;
+}
+/* line 135, _header.scss */
+#page #header nav.menu-principal .container .search-form {
+  padding: 10px;
+}
+/* line 138, _header.scss */
+#page #header nav.menu-principal .container .search-form .pesquisar-input {
+  float: left;
+  padding: 6px;
+}
+/* line 142, _header.scss */
+#page #header nav.menu-principal .container .search-form .pesquisar-submit {
+  float: left;
+}
+/* line 149, _header.scss */
+#page #header nav.menu-principal .container ul li a {
+  display: inline-block;
+  padding: 36px 30px;
+}
+/* line 153, _header.scss */
+#page #header nav.menu-principal .container ul li a:hover {
+  text-decoration: none;
+  background-color: #BE191F;
+}
+/* line 163, _header.scss */
+#page #header .fixar {
+  position: fixed;
+  z-index: 1000;
+  top: 0px !important;
+  right: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 2px #888888;
+}
+@media (max-width: 991px) {
+  /* line 178, _header.scss */
+  #page #header nav.menu-aux .dados-topo {
+    display: none;
+  }
+  /* line 181, _header.scss */
+  #page #header nav.menu-aux .dados-topo-vermelho {
+    display: none;
+  }
+  /* line 186, _header.scss */
+  #page #header nav.menu-principal .menu-opcoes {
+    display: none;
+  }
+  /* line 189, _header.scss */
+  #page #header nav.menu-principal .botao-menu-responsivo {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  /* line 199, _header.scss */
+  #page #header nav.menu-principal .botao-menu-responsivo {
+    display: none;
+  }
+}
+/* line 2, _content.scss */
+#page #content .secao-a {
+  background-image: #FFFFFF;
+}
+/* line 6, _content.scss */
+#page #content .secao-sobre {
+  background-image: url("images/background-projeto.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 804px;
+}
+/* line 13, _content.scss */
+#page #content .secao-sobre .sobre-vf {
+  padding-top: 100px;
+}
+/* line 15, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-right {
+  background-color: #272727;
+  height: 600px;
+}
+/* line 18, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-right img {
+  width: 100%;
+  max-width: 279px;
+  margin: 200px 0;
+}
+/* line 24, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-left {
+  padding: 130px 30px;
+  background-color: #FFFFFF;
+  height: 600px;
+}
+/* line 1, _footer.scss */
+#page #footer {
+  color: #FFFFFF;
+  text-align: left;
+}
+
+/* line 34, style.scss */
+.e-cinza:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/* line 39, style.scss */
+.e-claro:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+
+/*# sourceMappingURL=style.css.map */

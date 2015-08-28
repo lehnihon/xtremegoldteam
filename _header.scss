@@ -1,14 +1,204 @@
 #header{
-    .container{   
-        nav{ 
+	position:relative;
+
+    nav{
+    	position:absolute;
+    	z-index: 1000;
+    	left: 0;
+    	right: 0;
+        .container{
+            ul{
+                margin: 0;
+                li{
+                    list-style: none;
+                    float:left;
+
+                    a{
+                        display: inline-block;
+                        padding: 10px;
+                        color:#FFFFFF;
+                    }
+                }
+            }        
         }
+
+    }
+    nav.menu-aux{
+    	top:0;
+        .dados-topo{
+            padding-left:0;
+            
+            li{
+                padding: 10px;
+                color:#FFFFFF;
+                font-size: small;                
+            }
+        }
+        .dados-topo-vermelho{
+            padding-left:0;
+            li{
+                padding: 10px;
+                color:#9e151a;
+                font-size: small;                
+            }     
+        }
+
+        .redes_sociais_header{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            height: 22px;
+            text-align: left;
+            list-style:none;
+            float:right;
+            padding-left: 10px;
+        }
+
+        .redes_sociais_header li:hover{
+            opacity: 0.6;
+            filter: alpha(opacity=60); /* For IE8 and earlier */
+        }
+
+        .redes_sociais_header a{
+            display: inline-block;
+            width:22px;
+            height:20px;
+        }
+
+        .redes_sociais_header .youtube{
+            background-image: url("images/redes-sociais1.png");
+            background-position: left,center;
+            background-repeat:no-repeat;
+            width:22px;
+            height:20px;
+            display:inline-block;       
+        }
+
+        .redes_sociais_header .instagram{
+            background-image: url("images/redes-sociais1.png");
+            background-position: -26px,center;
+            background-repeat:no-repeat;
+            width:22px;
+            height:20px;
+            display:inline-block;       
+        }
+
+        .redes_sociais_header .twitter{
+            background-image: url("images/redes-sociais1.png");
+            background-position: -52px,center;
+            background-repeat:no-repeat;
+            width:22px;
+            height:20px;
+            display:inline-block;       
+        }
+
+        .redes_sociais_header .facebook{
+            background-image: url("images/redes-sociais1.png");
+            background-position: -80px,center;
+            background-repeat:no-repeat;
+            width:22px;
+            height:20px;
+            display:inline-block;       
+        }
+
+    }
+
+    nav.menu-principal{
+    	top:38px;
+        background-color:#9e151a;
+
+        .container{
+            .botao-menu-responsivo{
+                float:left;
+                margin-right: 20px;
+                margin-top: 12px;
+
+                .dropdown-menu{
+                    li{
+                        width: 100%;
+                        a{
+                            width: 100%;
+                            color:#606060;
+                            padding:15px;
+                        }
+                        a:hover{
+                            background-color:#f0f2f4;
+                        }
+                    }
+                }
+            }
+
+            .logo-header{
+                padding: 7px;
+                margin-right: 20px;
+            }
+
+            .search-form{
+                padding:10px;
+
+                .pesquisar-input{
+                    float:left;
+                    padding:6px;
+                }
+                .pesquisar-submit{
+                   float:left;
+                }
+            }
+
+            ul{
+                li{
+                    a{
+                        display: inline-block;
+                        padding:36px 30px;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        background-color:#BE191F;
+                    }
+                }
+            }        
+        } 
+
+    }   
+
+    .fixar {
+        position:fixed;
+        z-index: 1000;
+        top: 0px !important;
+        right: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 2px #888888;
+
     }    
 }
 
 @media (max-width: 991px) {  
-
+    #header{
+        nav.menu-aux{
+            .dados-topo{
+                display: none;
+            }   
+            .dados-topo-vermelho{
+                display: none;
+            }               
+        }
+        nav.menu-principal{
+            .menu-opcoes{
+                display:none;
+            }
+            .botao-menu-responsivo{
+                display: inline-block;
+            }
+        }
+    }   
 }
 
 @media (min-width: 992px) {  
-  
+    #header{
+        nav.menu-principal{
+            .botao-menu-responsivo{
+                display: none;
+            }
+        }
+    }    
 }

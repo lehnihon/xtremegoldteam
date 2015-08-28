@@ -13,47 +13,61 @@
 
 get_header(); ?>
 
-<div id="content">
-	<div class="container">
-		<div class="row">
-			<main class="col-md-8">
-
-			<?php if ( have_posts() ) : ?>
-
-				<?php if ( is_home() && ! is_front_page() ) : ?>
-					<header>
-						<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-					</header>
-				<?php endif; ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<?php
-
-						/*
-						 * Include the Post-Format-specific template for the content.
-						 * If you want to override this in a child theme, then include a file
-						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-						 */
-						get_template_part( 'template-parts/content', get_post_format() );
-					?>
-
-				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-			<?php endif; ?>
-			</main><!-- #main -->
-			<aside class="cold-md-4">
-				<?php get_sidebar(); ?>
-			</aside>
-		</div><!-- .row -->
-	</div><!-- .container -->
-</div><!-- #content -->
+<main id="content">
+	<section class="secao-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Xtreme Gold Team</h1>
+					<p>Conheça nossas unidades</p>
+				</div>
+			</div><!-- .row -->
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Academia no Tatuapé</h2>
+				</div>
+				<div class="col-md-6">
+					<h2>Academia na Santa Clara</h2>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<section class="secao-sobre">
+		<div class="sobre-vf container">
+			<div class="row">
+				<div class="col-md-6 sobre-right text-center">
+					<img style="display:none" class="fade-effect-a" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-extreme2.png"?>" />
+				</div>
+				<div class="col-md-6 sobre-left">
+					<h1 style="display:none" class="text-center fade-effect-b">V&F Arquitetura e Design de Interiores</h1><br>
+					<p style="display:none" class="fade-effect-c"><strong>A V&F Arquitetura surgiu da união entre o arquiteto Renato Furlanis e a designer Vivian Furlanis.</strong></p>
+					<p style="display:none" class="fade-effect-d">Formados pela Universidade Anhembi Morumbi e Panamericana de Arte e Design, atuam no mercado de arquitetura e design de interiores, realizando projetos residenciais e comerciais.</p>
+					<p style="display:none" class="fade-effect-e">De perfil contemporâneo, procuram criar espaços confortáveis, sofisticados e sobretudo funcionais, predominando a harmonia e elegância, trabalhando sempre com a fantasia e sonho do cliente.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="secao-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Unidade de Tatuapé</h1>
+					<p>Conheça algumas das modalidades que você vai encontrar na academia do Tatuapé</p>
+				</div>
+			</div><!-- .row -->
+			<div class="row">
+				<div class="col-md-4">
+					<h2>Academia no Tatuapé</h2>
+				</div>
+				<div class="col-md-4">
+					<h2>Academia na Santa Clara</h2>
+				</div>
+				<div class="col-md-4">
+					<h2>Academia na Santa Clara</h2>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+</main><!-- #content -->
 
 <?php get_footer(); ?>

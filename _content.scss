@@ -1,4 +1,34 @@
 #content{
+	.secao-a{
+	    background-image: #FFFFFF;
+	
+	}
+	.secao-sobre{
+	    background-image: url("images/background-projeto.png");
+	    background-repeat: no-repeat;
+	    background-position: center; 
+	    width: 100%;
+	    height: 804px;
+
+	    .sobre-vf{
+	    	padding-top:100px;
+	    	.sobre-right{
+	    		background-color:#272727;
+	    		height: 600px;
+	    		img{
+	    			width: 100%;
+	    			max-width: 279px;
+	    			margin: 200px 0;
+	    		}
+	    	}
+	    	.sobre-left{
+	    		padding:130px 30px;
+	    		background-color:#FFFFFF;
+	    		height: 600px;
+	    	}
+
+	    }		
+	}
 }
 
 @media (max-width: 991px) {  

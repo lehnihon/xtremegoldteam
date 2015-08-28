@@ -19,7 +19,8 @@
 		</div><!-- .container -->
 	</footer><!-- #footer -->
 </div><!-- #page -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo dirname( get_bloginfo('stylesheet_url')) ?>/js/script-xtreme.js"></script>
 <?php wp_footer(); ?>
 
 </body>
