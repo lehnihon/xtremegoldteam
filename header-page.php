@@ -1,13 +1,4 @@
-<?php
-/**
- * The header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package site
- */
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -43,7 +34,7 @@
 						<li><a href="<?php echo esc_url( home_url( '/' ))."blog/"; ?>">Blog</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."santa-clara/"; ?>">Unidade Santa Clara</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."tatuape/"; ?>">Unidade Tatuapé</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."sobre/"; ?>">A Xtreme</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."sobre/"; ?>">A Xtreme</a></li>	
 					</ul>
 				</div>
 				<span class="pull-left logo-header"><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-extreme1.png"; ?>"/></a></span>
@@ -53,10 +44,45 @@
 					<li><a href="<?php echo esc_url( home_url( '/' ))."blog/"; ?>">Blog</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/' ))."santa-clara/"; ?>">Unidade Santa Clara</a></li>
 					<li><a href="<?php echo esc_url( home_url( '/' ))."tatuape/"; ?>">Unidade Tatuapé</a></li>
-					<li><a href="<?php echo esc_url( home_url( '/' ))."sobre/"; ?>">A Xtreme</a></li>			
+					<li><a href="<?php echo esc_url( home_url( '/' ))."sobre/"; ?>">A Xtreme</a></li>	
 				</ul>
 			</div><!-- /.container -->
+			<?php global $post;
+			$slug = get_post( $post )->post_name;
+			if(has_category( 'tatuape', $post ) or is_page('tatuape')): 
+			?>
+			<div class="menu-principal-sub">
+				<div class="container">
+					<ul class="menu-sub">
+						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Fotos</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."duvidas/"; ?>">Dúvidas Frequentes</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."horarios/"; ?>">Hórários</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades/"; ?>">Modalidades</a></li>
+						<li><a <?php if($slug == 'tatuape'): echo 'class="ativo"'; endif; ?> href="<?php echo esc_url( home_url( '/' ))."tatuape/"; ?>">Unidade Tatuapé</a></li>
+					</ul>
+				</div>	
+			</div>
+			<?php 
+			elseif(has_category( 'santa-clara', $post ) or is_page('santa-clara')): 
+			?>
+			<div class="menu-principal-sub">
+				<div class="container">
+					<ul class="menu-sub">
+						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Fotos</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."duvidas/"; ?>">Dúvidas Frequentes</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."horarios/"; ?>">Hórários</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades/"; ?>">Modalidades</a></li>
+						<li><a <?php if($slug == 'santa-clara'): echo 'class="ativo"'; endif; ?> href="<?php echo esc_url( home_url( '/' ))."santa-clara/"; ?>">Unidade Santa Clara</a></li>
+					</ul>
+				</div>	
+			</div>
+			<?php endif; 
+			wp_reset_query();
+			?>
 		</nav>
 		<div class="nav-buttons"></div>
 	</header><!-- #header -->
-

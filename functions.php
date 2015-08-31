@@ -75,7 +75,9 @@ function site_setup() {
 		'default-image' => '',
 	) ) );
 
-	add_image_size('home-thumb',780,300,true);
+	add_image_size('home-thumb-paisagem',600,350,true);
+	add_image_size('home-thumb-quadrado',600,600,true);
+
 }
 endif; // site_setup
 add_action( 'after_setup_theme', 'site_setup' );
@@ -136,6 +138,11 @@ if (!function_exists('loop_columns')) {
 		return 4; // 3 products per row
 	}
 }
+
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /**
  * Implement the Custom Header feature.

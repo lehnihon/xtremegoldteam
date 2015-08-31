@@ -1,5 +1,5 @@
 /*
-Theme Name: ExtremeGoldTeam
+Theme Name: xtremeGoldTeam
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -24,6 +24,28 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#606060;
 	text-align:center;
+
+	h1,h2,h3{
+		color: #ffd900;
+	}
+
+	h4,h5,h6{
+		color:#232323;
+	}
+
+	.videoWrapper {
+	    position: relative;
+	    padding-bottom: 56.25%; /* 16:9 */
+	    padding-top: 25px;
+	    height: 0;
+	}
+	.videoWrapper iframe {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	}	
 
 	@import 'header';
 	@import 'content';

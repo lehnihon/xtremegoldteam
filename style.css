@@ -1,5 +1,5 @@
 /*
-Theme Name: ExtremeGoldTeam
+Theme Name: xtremeGoldTeam
 Theme URI: http://underscores.me/
 Author: Underscores.me
 Author URI: http://underscores.me/
@@ -25,6 +25,30 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #606060;
   text-align: center;
 }
+/* line 28, style.scss */
+#page h1, #page h2, #page h3 {
+  color: #ffd900;
+}
+/* line 32, style.scss */
+#page h4, #page h5, #page h6 {
+  color: #232323;
+}
+/* line 36, style.scss */
+#page .videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+/* line 42, style.scss */
+#page .videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /* line 1, _header.scss */
 #page #header {
   position: relative;
@@ -43,13 +67,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 12, _header.scss */
 #page #header nav .container ul li {
   list-style: none;
-  float: left;
 }
-/* line 16, _header.scss */
+/* line 15, _header.scss */
 #page #header nav .container ul li a {
   display: inline-block;
   padding: 10px;
-  color: #FFFFFF;
+  color: #232323;
+  font-weight: bold;
 }
 /* line 26, _header.scss */
 #page #header nav.menu-aux {
@@ -61,21 +85,22 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 31, _header.scss */
 #page #header nav.menu-aux .dados-topo li {
+  float: left;
   padding: 10px;
   color: #FFFFFF;
   font-size: small;
 }
-/* line 37, _header.scss */
+/* line 38, _header.scss */
 #page #header nav.menu-aux .dados-topo-vermelho {
   padding-left: 0;
 }
-/* line 39, _header.scss */
+/* line 40, _header.scss */
 #page #header nav.menu-aux .dados-topo-vermelho li {
   padding: 10px;
   color: #9e151a;
   font-size: small;
 }
-/* line 46, _header.scss */
+/* line 47, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header {
   margin-top: 10px;
   margin-bottom: 5px;
@@ -85,108 +110,202 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: right;
   padding-left: 10px;
 }
-/* line 56, _header.scss */
+/* line 57, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header li:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
   /* For IE8 and earlier */
 }
-/* line 61, _header.scss */
+/* line 62, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header a {
   display: inline-block;
   width: 22px;
   height: 20px;
 }
-/* line 67, _header.scss */
+/* line 68, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header .youtube {
   background-image: url("images/redes-sociais1.png");
-  background-position: left,center;
+  background-position: 5px,center;
   background-repeat: no-repeat;
   width: 22px;
   height: 20px;
   display: inline-block;
 }
-/* line 76, _header.scss */
+/* line 77, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header .instagram {
   background-image: url("images/redes-sociais1.png");
-  background-position: -26px,center;
+  background-position: -29px,center;
   background-repeat: no-repeat;
   width: 22px;
   height: 20px;
   display: inline-block;
 }
-/* line 85, _header.scss */
+/* line 86, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header .twitter {
   background-image: url("images/redes-sociais1.png");
-  background-position: -52px,center;
+  background-position: -64px,center;
   background-repeat: no-repeat;
   width: 22px;
   height: 20px;
   display: inline-block;
 }
-/* line 94, _header.scss */
+/* line 95, _header.scss */
 #page #header nav.menu-aux .redes_sociais_header .facebook {
   background-image: url("images/redes-sociais1.png");
-  background-position: -80px,center;
+  background-position: -100px,center;
   background-repeat: no-repeat;
   width: 22px;
   height: 20px;
   display: inline-block;
 }
-/* line 105, _header.scss */
+/* line 106, _header.scss */
 #page #header nav.menu-principal {
   top: 38px;
-  background-color: #9e151a;
+  background-color: #ffd900;
 }
-/* line 110, _header.scss */
+/* line 113, _header.scss */
+#page #header nav.menu-principal .container ul li {
+  float: right;
+}
+/* line 115, _header.scss */
+#page #header nav.menu-principal .container ul li a {
+  display: inline-block;
+  padding: 36px 30px;
+}
+/* line 119, _header.scss */
+#page #header nav.menu-principal .container ul li a:hover {
+  text-decoration: none;
+  background-color: #ffe866;
+}
+/* line 125, _header.scss */
 #page #header nav.menu-principal .container .botao-menu-responsivo {
   float: left;
   margin-right: 20px;
   margin-top: 12px;
 }
-/* line 116, _header.scss */
+/* line 131, _header.scss */
 #page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li {
   width: 100%;
 }
-/* line 118, _header.scss */
+/* line 133, _header.scss */
 #page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a {
   width: 100%;
   color: #606060;
   padding: 15px;
 }
-/* line 123, _header.scss */
+/* line 138, _header.scss */
 #page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a:hover {
   background-color: #f0f2f4;
 }
-/* line 130, _header.scss */
+/* line 145, _header.scss */
 #page #header nav.menu-principal .container .logo-header {
   padding: 7px;
   margin-right: 20px;
 }
-/* line 135, _header.scss */
+/* line 150, _header.scss */
 #page #header nav.menu-principal .container .search-form {
   padding: 10px;
 }
-/* line 138, _header.scss */
+/* line 153, _header.scss */
 #page #header nav.menu-principal .container .search-form .pesquisar-input {
   float: left;
   padding: 6px;
 }
-/* line 142, _header.scss */
+/* line 157, _header.scss */
 #page #header nav.menu-principal .container .search-form .pesquisar-submit {
   float: left;
 }
-/* line 149, _header.scss */
+/* line 166, _header.scss */
+#page #header .fixar {
+  position: fixed;
+  z-index: 1000;
+  top: 0px !important;
+  right: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  box-shadow: 0px 5px 2px #888888;
+}
+/* line 177, _header.scss */
+#page #header nav.menu-principal {
+  top: 38px;
+  background-color: #ffd900;
+}
+/* line 184, _header.scss */
+#page #header nav.menu-principal .container ul li {
+  float: right;
+}
+/* line 186, _header.scss */
 #page #header nav.menu-principal .container ul li a {
   display: inline-block;
   padding: 36px 30px;
 }
-/* line 153, _header.scss */
+/* line 190, _header.scss */
 #page #header nav.menu-principal .container ul li a:hover {
   text-decoration: none;
-  background-color: #BE191F;
+  background-color: #ffe866;
 }
-/* line 163, _header.scss */
+/* line 196, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo {
+  float: left;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+/* line 202, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li {
+  width: 100%;
+}
+/* line 204, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a {
+  width: 100%;
+  color: #606060;
+  padding: 15px;
+}
+/* line 209, _header.scss */
+#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a:hover {
+  background-color: #f0f2f4;
+}
+/* line 216, _header.scss */
+#page #header nav.menu-principal .container .logo-header {
+  padding: 7px;
+  margin-right: 20px;
+}
+/* line 221, _header.scss */
+#page #header nav.menu-principal .container .search-form {
+  padding: 10px;
+}
+/* line 224, _header.scss */
+#page #header nav.menu-principal .container .search-form .pesquisar-input {
+  float: left;
+  padding: 6px;
+}
+/* line 228, _header.scss */
+#page #header nav.menu-principal .container .search-form .pesquisar-submit {
+  float: left;
+}
+/* line 234, _header.scss */
+#page #header nav.menu-principal .menu-principal-sub {
+  background-color: #323232;
+}
+/* line 238, _header.scss */
+#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a {
+  padding: 15px;
+  color: #FFFFFF;
+}
+/* line 242, _header.scss */
+#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a:hover {
+  background-color: #5a5a5a;
+}
+/* line 245, _header.scss */
+#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a.ativo {
+  background-color: #5a5a5a;
+}
+/* line 254, _header.scss */
+#page #header .nav-buttons {
+  height: 60px;
+  width: 100%;
+  background-color: #ffd900;
+}
+/* line 260, _header.scss */
 #page #header .fixar {
   position: fixed;
   z-index: 1000;
@@ -197,25 +316,25 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   box-shadow: 0px 5px 2px #888888;
 }
 @media (max-width: 991px) {
-  /* line 178, _header.scss */
+  /* line 275, _header.scss */
   #page #header nav.menu-aux .dados-topo {
     display: none;
   }
-  /* line 181, _header.scss */
+  /* line 278, _header.scss */
   #page #header nav.menu-aux .dados-topo-vermelho {
     display: none;
   }
-  /* line 186, _header.scss */
+  /* line 283, _header.scss */
   #page #header nav.menu-principal .menu-opcoes {
     display: none;
   }
-  /* line 189, _header.scss */
+  /* line 286, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: inline-block;
   }
 }
 @media (min-width: 992px) {
-  /* line 199, _header.scss */
+  /* line 296, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: none;
   }
@@ -223,49 +342,175 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 2, _content.scss */
 #page #content .secao-a {
   background-image: #FFFFFF;
+  padding: 100px 0;
 }
 /* line 6, _content.scss */
+#page #content .secao-a .detalhes-unidade {
+  background-color: #ffd900;
+  padding: 20px;
+}
+/* line 10, _content.scss */
+#page #content .secao-a .detalhes-unidade .detalhe-unidade-esq {
+  float: left;
+  width: 70%;
+}
+/* line 14, _content.scss */
+#page #content .secao-a .detalhes-unidade .detalhe-unidade-dir {
+  padding-top: 20px;
+  float: left;
+  width: 30%;
+}
+/* line 23, _content.scss */
+#page #content .secao-a .modalidades article {
+  background-color: #f4f4f4;
+}
+/* line 26, _content.scss */
+#page #content .secao-a .modalidades article .entry-content {
+  padding: 20px 5px;
+}
+/* line 32, _content.scss */
+#page #content .secao-b {
+  background-color: #323232;
+  padding: 50px 0;
+}
+/* line 36, _content.scss */
 #page #content .secao-sobre {
-  background-image: url("images/background-projeto.png");
+  background-image: url("images/background-luta.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   width: 100%;
   height: 804px;
 }
-/* line 13, _content.scss */
+/* line 44, _content.scss */
 #page #content .secao-sobre .sobre-vf {
   padding-top: 100px;
 }
-/* line 15, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-right {
-  background-color: #272727;
-  height: 600px;
+/* line 45, _content.scss */
+#page #content .secao-sobre .sobre-vf .col-md-6 {
+  padding: 0;
 }
-/* line 18, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-right img {
+/* line 49, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-left-top {
+  background-color: #ffd900;
+  height: 350px;
+}
+/* line 52, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-left-top img {
   width: 100%;
   max-width: 279px;
-  margin: 200px 0;
+  margin-top: 70px;
 }
-/* line 24, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-left {
-  padding: 130px 30px;
+/* line 58, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-left-bot {
+  padding: 35px 50px;
+  background-color: #272727;
+  height: 250px;
+  color: #FFFFFF;
+}
+/* line 63, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-left-bot strong {
+  color: #ffd900;
+}
+/* line 67, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-right {
+  padding: 50px;
   background-color: #FFFFFF;
   height: 600px;
 }
+/* line 72, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-right h2 {
+  color: #232323;
+  font-weight: bold;
+}
 /* line 1, _footer.scss */
 #page #footer {
+  background-color: #323232;
+  padding: 50px 0;
   color: #FFFFFF;
   text-align: left;
 }
+/* line 11, _footer.scss */
+#page .copyrino {
+  color: #FFFFFF;
+  background-color: #ffd900;
+  padding: 5px 0;
+}
+/* line 15, _footer.scss */
+#page .copyrino .col-md-10 {
+  padding: 12px;
+}
+/* line 17, _footer.scss */
+#page .copyrino .col-md-10 a {
+  color: #FFFFFF;
+}
+/* line 23, _footer.scss */
+#page .redes_sociais_bot {
+  margin-bottom: 5px;
+  height: 67px;
+  text-align: left;
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 310px;
+  padding: 0;
+}
+/* line 34, _footer.scss */
+#page .redes_sociais_bot li:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  /* For IE8 and earlier */
+}
+/* line 39, _footer.scss */
+#page .redes_sociais_bot a {
+  display: inline-block;
+  width: 67px;
+  height: 67px;
+}
+/* line 45, _footer.scss */
+#page .redes_sociais_bot .youtube {
+  background-image: url("images/redes-sociais2.png");
+  background-position: left,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 54, _footer.scss */
+#page .redes_sociais_bot .instagram {
+  background-image: url("images/redes-sociais2.png");
+  background-position: -80px,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 63, _footer.scss */
+#page .redes_sociais_bot .twitter {
+  background-image: url("images/redes-sociais2.png");
+  background-position: -160px,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
+/* line 72, _footer.scss */
+#page .redes_sociais_bot .facebook {
+  background-image: url("images/redes-sociais2.png");
+  background-position: right,center;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 67px;
+  display: inline-block;
+}
 
-/* line 34, style.scss */
+/* line 56, style.scss */
 .e-cinza:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 39, style.scss */
+/* line 61, style.scss */
 .e-claro:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

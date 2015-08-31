@@ -11,12 +11,12 @@
                 margin: 0;
                 li{
                     list-style: none;
-                    float:left;
 
                     a{
                         display: inline-block;
                         padding: 10px;
-                        color:#FFFFFF;
+                        color:#232323;
+                        font-weight: bold;
                     }
                 }
             }        
@@ -29,6 +29,7 @@
             padding-left:0;
             
             li{
+                float:left;
                 padding: 10px;
                 color:#FFFFFF;
                 font-size: small;                
@@ -66,7 +67,7 @@
 
         .redes_sociais_header .youtube{
             background-image: url("images/redes-sociais1.png");
-            background-position: left,center;
+            background-position: 5px,center;
             background-repeat:no-repeat;
             width:22px;
             height:20px;
@@ -75,7 +76,7 @@
 
         .redes_sociais_header .instagram{
             background-image: url("images/redes-sociais1.png");
-            background-position: -26px,center;
+            background-position: -29px,center;
             background-repeat:no-repeat;
             width:22px;
             height:20px;
@@ -84,7 +85,7 @@
 
         .redes_sociais_header .twitter{
             background-image: url("images/redes-sociais1.png");
-            background-position: -52px,center;
+            background-position: -64px,center;
             background-repeat:no-repeat;
             width:22px;
             height:20px;
@@ -93,7 +94,7 @@
 
         .redes_sociais_header .facebook{
             background-image: url("images/redes-sociais1.png");
-            background-position: -80px,center;
+            background-position: -100px,center;
             background-repeat:no-repeat;
             width:22px;
             height:20px;
@@ -104,9 +105,23 @@
 
     nav.menu-principal{
     	top:38px;
-        background-color:#9e151a;
+        background-color:#ffd900;
 
         .container{
+
+            ul{
+                li{
+                    float:right;
+                    a{
+                        display: inline-block;
+                        padding:36px 30px;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        background-color:#ffe866;
+                    }
+                }
+            } 
             .botao-menu-responsivo{
                 float:left;
                 margin-right: 20px;
@@ -143,19 +158,7 @@
                    float:left;
                 }
             }
-
-            ul{
-                li{
-                    a{
-                        display: inline-block;
-                        padding:36px 30px;
-                    }
-                    a:hover{
-                        text-decoration: none;
-                        background-color:#BE191F;
-                    }
-                }
-            }        
+       
         } 
 
     }   
@@ -169,7 +172,101 @@
         background-color: #FFFFFF;
         box-shadow: 0px 5px 2px #888888;
 
-    }    
+    }  
+
+    nav.menu-principal{
+        top:38px;
+        background-color:#ffd900;
+
+        .container{
+
+            ul{
+                li{
+                    float:right;
+                    a{
+                        display: inline-block;
+                        padding:36px 30px;
+                    }
+                    a:hover{
+                        text-decoration: none;
+                        background-color:#ffe866;
+                    }
+                }
+            } 
+            .botao-menu-responsivo{
+                float:left;
+                margin-right: 20px;
+                margin-top: 12px;
+
+                .dropdown-menu{
+                    li{
+                        width: 100%;
+                        a{
+                            width: 100%;
+                            color:#606060;
+                            padding:15px;
+                        }
+                        a:hover{
+                            background-color:#f0f2f4;
+                        }
+                    }
+                }
+            }
+
+            .logo-header{
+                padding: 7px;
+                margin-right: 20px;
+            }
+
+            .search-form{
+                padding:10px;
+
+                .pesquisar-input{
+                    float:left;
+                    padding:6px;
+                }
+                .pesquisar-submit{
+                   float:left;
+                }
+            }
+       
+        } 
+        .menu-principal-sub{
+            background-color:#323232;
+            ul.menu-sub{
+                li{
+                    a{
+                        padding:15px;
+                        color:#FFFFFF;
+                    }
+                    a:hover{
+                        background-color:#5a5a5a;
+                    }
+                    a.ativo{
+                         background-color:#5a5a5a;
+                    }
+                }
+            }
+        }
+        
+    }   
+
+    .nav-buttons{
+        height: 60px;
+        width: 100%;
+        background-color:#ffd900;
+    }
+
+    .fixar {
+        position:fixed;
+        z-index: 1000;
+        top: 0px !important;
+        right: 0;
+        left: 0;
+        background-color: #FFFFFF;
+        box-shadow: 0px 5px 2px #888888;
+
+    }  
 }
 
 @media (max-width: 991px) {  
