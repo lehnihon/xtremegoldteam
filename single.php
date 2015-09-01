@@ -2,11 +2,11 @@
 get_header('page'); ?>
 
 <div id="content">
-	<div class="container">
+	<div class="container modalidades">
 		<div class="row">
 			<aside class="col-md-4">
 				<div class="cabecalho-mod clearfix">
-					<span class="pull-left">Modalidades</span><img class="botaoa closed img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/botao-mais.png"?>" />
+					<span>Modalidades</span><img class="botaoa closed img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/botao-mais.png"?>" />
 				</div>
 				<div class="conteudo-mod tabelaa" style="display:none">
 					<ul>

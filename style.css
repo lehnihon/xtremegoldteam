@@ -360,20 +360,35 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: left;
   width: 30%;
 }
-/* line 23, _content.scss */
+/* line 24, _content.scss */
 #page #content .secao-a .modalidades article {
   background-color: #f4f4f4;
 }
-/* line 26, _content.scss */
+/* line 27, _content.scss */
 #page #content .secao-a .modalidades article .entry-content {
   padding: 20px 5px;
 }
-/* line 32, _content.scss */
+/* line 33, _content.scss */
 #page #content .secao-b {
   background-color: #323232;
   padding: 50px 0;
 }
-/* line 36, _content.scss */
+/* line 39, _content.scss */
+#page #content .modalidades .cabecalho-mod {
+  background-color: #ffd900;
+  padding: 10px;
+}
+/* line 43, _content.scss */
+#page #content .modalidades .cabecalho-mod span {
+  padding: 5px 10px;
+  float: left;
+  font-weight: bold;
+}
+/* line 48, _content.scss */
+#page #content .modalidades .cabecalho-mod img {
+  float: right;
+}
+/* line 54, _content.scss */
 #page #content .secao-sobre {
   background-image: url("images/background-luta.jpg");
   background-repeat: no-repeat;
@@ -382,43 +397,43 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   height: 804px;
 }
-/* line 44, _content.scss */
+/* line 62, _content.scss */
 #page #content .secao-sobre .sobre-vf {
   padding-top: 100px;
 }
-/* line 45, _content.scss */
+/* line 63, _content.scss */
 #page #content .secao-sobre .sobre-vf .col-md-6 {
   padding: 0;
 }
-/* line 49, _content.scss */
+/* line 67, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top {
   background-color: #ffd900;
   height: 350px;
 }
-/* line 52, _content.scss */
+/* line 70, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top img {
   width: 100%;
   max-width: 279px;
   margin-top: 70px;
 }
-/* line 58, _content.scss */
+/* line 76, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot {
   padding: 35px 50px;
   background-color: #272727;
   height: 250px;
   color: #FFFFFF;
 }
-/* line 63, _content.scss */
+/* line 81, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot strong {
   color: #ffd900;
 }
-/* line 67, _content.scss */
+/* line 85, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-right {
   padding: 50px;
   background-color: #FFFFFF;
   height: 600px;
 }
-/* line 72, _content.scss */
+/* line 90, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-right h2 {
   color: #232323;
   font-weight: bold;

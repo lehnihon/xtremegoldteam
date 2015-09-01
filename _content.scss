@@ -20,6 +20,7 @@
 		}
 
 		.modalidades{
+
 			article{
 				background-color:#f4f4f4;
 
@@ -33,6 +34,23 @@
 		background-color:#323232;
 		padding:50px 0;
 	}
+	
+	.modalidades{
+		.cabecalho-mod{
+			background-color:#ffd900;
+			padding:10px;
+
+			span{
+				padding:5px 10px;
+				float:left;
+				font-weight: bold;
+			}
+			img{
+				float:right;
+			}
+		}
+	}
+
 	.secao-sobre{
 	    background-image: url("images/background-luta.jpg");
 	    background-repeat: no-repeat;
