@@ -76,8 +76,8 @@ function site_setup() {
 	) ) );
 
 	add_image_size('home-thumb-paisagem',600,350,true);
-	add_image_size('home-thumb-quadrado',600,600,true);
-
+	add_image_size('home-thumb-quadrado',400,400,true);
+	add_image_size('detalhes',750,400,true);
 }
 endif; // site_setup
 add_action( 'after_setup_theme', 'site_setup' );

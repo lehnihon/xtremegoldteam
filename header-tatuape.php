@@ -27,9 +27,6 @@
 
 			<?php get_template_part( 'template-parts/menu-principal' ); ?>
 
-			<?php global $post;
-			if(has_category( 'tatuape', $post ) or is_page('tatuape')): 
-			?>
 			<div class="menu-principal-sub">
 				<div class="container">
 					<ul class="menu-sub">
@@ -37,29 +34,13 @@
 						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Fotos</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."duvidas/"; ?>">Dúvidas Frequentes</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."horarios/"; ?>">Hórários</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Hórários</a></li>
 						<li><a <?php if(is_page('modalidades-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Modalidades</a></li>			
+						<li><a class="menu-sub-header" href="#">Tatuapé</a></li>
 					</ul>
 				</div>	
 			</div>
-			<?php 
-			elseif(has_category( 'santa-clara', $post ) or is_page('santa-clara')): 
-			?>
-			<div class="menu-principal-sub">
-				<div class="container">
-					<ul class="menu-sub">
-						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Fotos</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."duvidas/"; ?>">Dúvidas Frequentes</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."horarios/"; ?>">Hórários</a></li>
-						<li><a <?php if(is_page('modalidades-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-santa-clara/"; ?>">Modalidades</a></li>
-					</ul>
-				</div>	
-			</div>
-			<?php endif; 
-			wp_reset_query();
-			?>
+			<?php wp_reset_query(); ?>
 		</nav>
 		<div class="nav-buttons"></div>
 	</header><!-- #header -->

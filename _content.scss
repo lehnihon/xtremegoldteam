@@ -35,20 +35,42 @@
 		padding:50px 0;
 	}
 	
-	.modalidades{
-		.cabecalho-mod{
-			background-color:#ffd900;
-			padding:10px;
+	.modalidades-pag{
+		padding:50px 0;
 
-			span{
-				padding:5px 10px;
-				float:left;
-				font-weight: bold;
+		.wrap-mod{
+			margin-bottom: 10px;
+
+			.cabecalho-mod{
+				background-color:#ffd900;
+				padding:10px;
+
+				span{
+					padding:5px 10px;
+					float:left;
+					font-weight: bold;
+				}
+				img{
+					float:right;
+					cursor:pointer;
+				}
 			}
-			img{
-				float:right;
+			.conteudo-mod{
+				ul{
+					li{
+						padding:5px;
+						list-style: none;
+					}
+				}
+			}			
+		}
+
+		article{
+			h3{
+				color:#232323;
 			}
 		}
+
 	}
 
 	.secao-sobre{

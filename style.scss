@@ -33,6 +33,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		color:#232323;
 	}
 
+	a:visited,a:link{
+		color:#606060;
+	}
+
+	a:hover{
+		color:#8f8f8f;
+		text-decoration: none;
+	}
+
 	.videoWrapper {
 	    position: relative;
 	    padding-bottom: 56.25%; /* 16:9 */

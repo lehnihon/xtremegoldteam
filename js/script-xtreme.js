@@ -23,60 +23,18 @@
             }
         });
 
-        $(".botaoa").click(function(){
-            $(".tabelaa").toggle( "slow", function() {
-                if($(".botaoa").hasClass("closed")){
-                    $(".botaoa").attr('src',dirbase+"/images/botao-menos.png");
-                    $(".botaoa").removeClass( "closed" );
+        $(".botao-efeito").click(function(){
+            var botao = $(this);
+            $(botao).parent().next('div.tabela').toggle( "slow", function() {
+                if($(botao).hasClass("closed")){
+                    $(botao).attr('src',dirbase+"/images/botao-menos.png");
+                    $(botao).removeClass( "closed" );
                 }else{
-                    $(".botaoa").attr('src',dirbase+"/images/botao-mais.png");
-                    $(".botaoa").addClass( "closed" );
+                    $(botao).attr('src',dirbase+"/images/botao-mais.png");
+                    $(botao).addClass( "closed" );
                 }
             });
         })
-        $(".botaob").click(function(){
-            $(".tabelab").toggle( "slow", function() {
-                if($(".botaob").hasClass("closed")){
-                    $(".botaob").attr('src',dirbase+"/images/botao-menos.png");
-                    $(".botaob").removeClass( "closed" );
-                }else{
-                    $(".botaob").attr('src',dirbase+"/images/botao-mais.png");
-                    $(".botaob").addClass( "closed" );
-                }
-            });
-        })
-        $(".botaoc").click(function(){
-            $(".tabelac").toggle( "slow", function() {
-                if($(".botaoc").hasClass("closed")){
-                    $(".botaoc").attr('src',dirbase+"/images/botao-menos.png");
-                    $(".botaoc").removeClass( "closed" );
-                }else{
-                    $(".botaoc").attr('src',dirbase+"/images/botao-mais.png");
-                    $(".botaoc").addClass( "closed" );
-                }
-            });
-        })
-        $(".botaod").click(function(){
-            $(".tabelad").toggle( "slow", function() {
-                if($(".botaod").hasClass("closed")){
-                    $(".botaod").attr('src',dirbase+"/images/botao-menos.png");
-                    $(".botaod").removeClass( "closed" );
-                }else{
-                    $(".botaod").attr('src',dirbase+"/images/botao-mais.png");
-                    $(".botaod").addClass( "closed" );
-                }
-            });
-        })
-        $(".botaoe").click(function(){
-            $(".tabelae").toggle( "slow", function() {
-                if($(".botaoe").hasClass("closed")){
-                    $(".botaoe").attr('src',dirbase+"/images/botao-menos.png");
-                    $(".botaoe").removeClass( "closed" );
-                }else{
-                    $(".botaoe").attr('src',dirbase+"/images/botao-mais.png");
-                    $(".botaoe").addClass( "closed" );
-                }
-            });
-        })
+      
     });
 })(jQuery);

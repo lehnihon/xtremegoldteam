@@ -2,33 +2,17 @@
 get_header('page'); ?>
 
 <div id="content">
-	<div class="container modalidades">
+	<div class="container modalidades-pag">
 		<div class="row">
-			<aside class="col-md-4">
-				<div class="cabecalho-mod clearfix">
-					<span>Modalidades</span><img class="botaoa closed img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/botao-mais.png"?>" />
-				</div>
-				<div class="conteudo-mod tabelaa" style="display:none">
-					<ul>
-					<?php 
-						$args = array('posts_per_page' => 10, 'category_name' => 'tatuape', 'orderby' => 'rand');
-						$query = new WP_Query( $args ); 
-						?>	
 
-						<?php if ( $query->have_posts() ) : ?>
-							<?php while ( $query->have_posts() ) : $query->the_post(); ?>
-								<li>
-									<?php the_title( sprintf( '<a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>								
-								</li>
-							<?php endwhile; ?>
-						<?php endif; 
-						wp_reset_query();
-						?>						
-					</ul>
-				</div>
-			</aside>
-			<main class="col-md-8">
+			<?php get_template_part('template-parts/esportes-aside') ?>
 
+			<main class="col-md-8 text-left">
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<?php get_template_part( 'template-parts/content', 'single' ); ?>
+
+				<?php endwhile; // End of the loop. ?>
 			</main><!-- #main -->
 
 		</div><!-- .row -->

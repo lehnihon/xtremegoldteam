@@ -191,6 +191,9 @@
                         text-decoration: none;
                         background-color:#ffe866;
                     }
+                    a.ativob{
+                         background-color:#ffe866;
+                    }
                 }
             } 
             .botao-menu-responsivo{
@@ -208,6 +211,9 @@
                         }
                         a:hover{
                             background-color:#f0f2f4;
+                        }
+                        a.ativob{
+                             background-color:#f0f2f4;
                         }
                     }
                 }
@@ -242,9 +248,17 @@
                     a:hover{
                         background-color:#5a5a5a;
                     }
+                    a.menu-sub-header{
+                        color: #ffd900;
+                    }
+                    a.menu-sub-header:hover{
+                        background-color:transparent;
+                        cursor: default;
+                    }
                     a.ativo{
                          background-color:#5a5a5a;
                     }
+
                 }
             }
         }
