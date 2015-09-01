@@ -43,7 +43,9 @@
 					<p><strong>Unidade Tatuapé</strong></p>
 					<ul>
 					<?php 
-						$args = array('posts_per_page' => 10, 'category_name' => 'tatuape', 'orderby' => 'rand');
+						$fotos= get_category_by_slug('fotos');
+						$videos= get_category_by_slug('videos');
+						$args = array('posts_per_page' => 10, 'category_name' => 'tatuape', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
 						$query = new WP_Query( $args ); 
 						?>	
 
@@ -61,7 +63,9 @@
 					<p><strong>Unidade Santa Clara</strong></p>
 					<ul>
 					<?php 
-						$args = array('posts_per_page' => 10, 'category_name' => 'tatuape', 'orderby' => 'rand');
+						$fotos= get_category_by_slug('fotos');
+						$videos= get_category_by_slug('videos');
+						$args = array('posts_per_page' => 10, 'category_name' => 'santa-clara', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
 						$query = new WP_Query( $args ); 
 						?>	
 

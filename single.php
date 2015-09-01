@@ -4,8 +4,13 @@ get_header('page'); ?>
 <div id="content">
 	<div class="container modalidades-pag">
 		<div class="row">
-
-			<?php get_template_part('template-parts/esportes-aside') ?>
+			<?php 
+			if(has_category( 'tatuape', $post )):
+				get_template_part('template-parts/esportes-aside-tatuape');
+			else:
+				get_template_part('template-parts/esportes-aside-santa-clara');
+			endif;
+			?>
 
 			<main class="col-md-8 text-left">
 				<?php while ( have_posts() ) : the_post(); ?>

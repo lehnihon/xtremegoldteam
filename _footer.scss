@@ -5,6 +5,18 @@
 	text-align:left;
 
 	.container{
+		ul{
+			padding:0;
+			li{
+				list-style: none;
+				a{
+					color:#FFFFFF;
+				}
+				a:hover{
+					color:#ffd900;
+				}
+			}
+		}
 	}
 }
 
