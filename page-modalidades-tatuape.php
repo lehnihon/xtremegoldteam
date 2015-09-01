@@ -5,7 +5,7 @@ get_header('tatuape'); ?>
 	<div class="container modalidades-pag">
 		<div class="row">
 
-			<?php get_template_part('template-parts/esportes-aside-tatuape') ?>
+			<?php get_template_part('template-parts/modalidades-aside-tatuape') ?>
 
 			<main class="col-md-8 text-left">
 				<h2>Modalidades da Unidade de Tatuapé</h2>

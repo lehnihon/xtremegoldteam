@@ -1,7 +1,7 @@
 <aside class="col-md-4">
 	<?php 
-	$Esportes = get_category_by_slug( 'esportes' );
-	$categories = get_categories(array('child_of' => $Esportes->term_id, 'hide_empty'=> 0));
+	$Modalidades = get_category_by_slug( 'modalidades' );
+	$categories = get_categories(array('child_of' => $Modalidades->term_id, 'hide_empty'=> 0));
 	foreach($categories as $category):
 	?> 
 		<div class="wrap-mod">
@@ -11,7 +11,7 @@
 			<div class="conteudo-mod tabela text-left" style="display:none">
 				<ul>
 				<?php 
-					$args = array( 'cat' => $category->term_id, 'category_name' => 'tatuape');
+					$args = array( 'cat' => $category->term_id, 'category_name' => 'santa-clara');
 					$query = new WP_Query( $args ); 
 					?>	
 

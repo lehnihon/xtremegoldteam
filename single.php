@@ -6,9 +6,9 @@ get_header('page'); ?>
 		<div class="row">
 			<?php 
 			if(has_category( 'tatuape', $post )):
-				get_template_part('template-parts/esportes-aside-tatuape');
+				get_template_part('template-parts/modalidades-aside-tatuape');
 			else:
-				get_template_part('template-parts/esportes-aside-santa-clara');
+				get_template_part('template-parts/modalidades-aside-santa-clara');
 			endif;
 			?>
 

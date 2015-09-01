@@ -5,7 +5,7 @@ get_header('santa-clara'); ?>
 	<div class="container modalidades-pag">
 		<div class="row">
 
-			<?php get_template_part('template-parts/esportes-aside-santa-clara') ?>
+			<?php get_template_part('template-parts/modalidades-aside-santa-clara') ?>
 
 			<main class="col-md-8 text-left">
 				<h2>Modalidades da Unidade de Santa Clara</h2>
