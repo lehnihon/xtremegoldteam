@@ -3,7 +3,7 @@ get_header('tatuape'); ?>
 
 <main id="content">
 	<section class="secao-a">
-		<div class="container modalidades">
+		<div class="container modalidades-pag">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Unidade de Tatuapé</h1>

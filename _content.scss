@@ -35,6 +35,29 @@
 		padding:50px 0;
 	}
 	
+	.duvidas-pag{
+		.wrap-duv{
+			.cabecalho-duv{
+				padding:10px;
+				span{
+					width: 90%;
+					padding:5px 10px;
+					float:left;
+					font-weight: bold;
+				}
+				img{
+
+					float:left;
+					cursor:pointer;
+				}
+			}	
+			.conteudo-duv{
+				padding:5px;
+				padding-left:52px;
+			}
+		}
+	}
+
 	.modalidades-pag{
 		padding:50px 0;
 
@@ -62,7 +85,8 @@
 						list-style: none;
 					}
 				}
-			}			
+			}	
+		
 		}
 
 		article{
