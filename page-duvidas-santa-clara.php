@@ -90,7 +90,7 @@ get_header('santa-clara'); ?>
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Vídeos Xtreme</h1>
-					<h4>Confira outros vídeos da unidade Tatuapé da Xtreme Gold Team</h4>
+					<h4>Confira outros vídeos da unidade Santa Clara da Xtreme Gold Team</h4>
 				</div>
 			</div><!-- .row -->
 			<br><br>

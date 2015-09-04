@@ -23,6 +23,12 @@
         }
 
     }
+
+    nav.pos-fix{
+        position: static;
+        z-index: 0;
+    }
+
     nav.menu-aux{
     	top:0;
         .dados-topo{

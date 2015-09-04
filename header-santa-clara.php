@@ -12,8 +12,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="header">
-		<?php putRevSlider( "banner-index" ) ?>
-		<nav class="menu-aux">
+		<nav class="menu-aux pos-fix">
 			<div class="container">
 				<ul class="redes_sociais_header">
 					<li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCNkHrw4ujO_bUW7nmrPF1TA"></a></li>
@@ -23,16 +22,16 @@
 				</ul>
 			</div><!-- /.container -->
 		</nav>
-		<nav class="menu-principal" id="menu-principal">
+		<nav class="menu-principal pos-fix" id="menu-principal">
 
 			<?php get_template_part( 'template-parts/menu-principal' ); ?>
 
 			<div class="menu-principal-sub">
 				<div class="container">
 					<ul class="menu-sub">
-						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Fotos</a></li>
+						<li><a <?php if(is_page('fale-conosco-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."fale-conosco-santa-clara/"; ?>">Fale Conosco</a></li>
+						<li><a <?php if(is_page('localizacao-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."localizacao-santa-clara/"; ?>">Localização</a></li>
+						<li><a <?php if(is_page('fotos-santa-clara')): echo "class='ativo'"; endif; ?>  href="<?php echo esc_url( home_url( '/' ))."fotos-santa-clara/"; ?>">Fotos</a></li>
 						<li><a <?php if(is_page('duvidas-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."duvidas-santa-clara/"; ?>">Dúvidas Frequentes</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades-santa-clara/"; ?>">Hórários</a></li>
 						<li><a <?php if(is_page('modalidades-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-santa-clara/"; ?>">Modalidades</a></li>
@@ -42,5 +41,4 @@
 			</div>
 			<?php wp_reset_query(); ?>
 		</nav>
-		<div class="nav-buttons"></div>
 	</header><!-- #header -->

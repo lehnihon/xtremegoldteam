@@ -12,8 +12,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="header">
-		<?php putRevSlider( "banner-index" ) ?>
-		<nav class="menu-aux">
+		<nav class="menu-aux pos-fix">
 			<div class="container">
 				<ul class="redes_sociais_header">
 					<li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCNkHrw4ujO_bUW7nmrPF1TA"></a></li>
@@ -23,16 +22,16 @@
 				</ul>
 			</div><!-- /.container -->
 		</nav>
-		<nav class="menu-principal" id="menu-principal">
+		<nav class="menu-principal pos-fix" id="menu-principal">
 
 			<?php get_template_part( 'template-parts/menu-principal' ); ?>
 
 			<div class="menu-principal-sub">
 				<div class="container">
 					<ul class="menu-sub">
-						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."localizacao/"; ?>">Localização</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."fotos/"; ?>">Fotos</a></li>
+						<li><a <?php if(is_page('fale-conosco-tatuape')): echo "class='ativo'"; endif; ?>  href="<?php echo esc_url( home_url( '/' ))."fale-conosco-tatuape/"; ?>">Fale Conosco</a></li>
+						<li><a <?php if(is_page('localizacao-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."localizacao-tatuape/"; ?>">Localização</a></li>
+						<li><a <?php if(is_page('fotos-tatuape')): echo "class='ativo'"; endif; ?>  href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>">Fotos</a></li>
 						<li><a <?php if(is_page('duvidas-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."duvidas-tatuape/"; ?>">Dúvidas Frequentes</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Hórários</a></li>
 						<li><a <?php if(is_page('modalidades-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Modalidades</a></li>			
@@ -42,5 +41,4 @@
 			</div>
 			<?php wp_reset_query(); ?>
 		</nav>
-		<div class="nav-buttons"></div>
 	</header><!-- #header -->

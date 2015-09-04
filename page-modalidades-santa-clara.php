@@ -2,18 +2,19 @@
 get_header('santa-clara'); ?>
 
 <div id="content">
-	<div class="container modalidades-pag">
-		<div class="row">
+	<section class="secao-a">
+		<div class="container modalidades-pag">
+			<div class="row">
 
-			<?php get_template_part('template-parts/modalidades-aside-santa-clara') ?>
+				<?php get_template_part('template-parts/modalidades-aside-santa-clara') ?>
 
-			<main class="col-md-8 text-left">
-				<h2>Modalidades da Unidade de Santa Clara</h2>
-			</main><!-- #main -->
+				<main class="col-md-8 text-left">
+					<h2>Modalidades da Unidade de Santa Clara</h2>
+				</main><!-- #main -->
 
-		</div><!-- .row -->
-	</div><!-- .container -->
-
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
 	<?php get_template_part( 'template-parts/contato'); ?>
 	
 	<section class="secao-a">

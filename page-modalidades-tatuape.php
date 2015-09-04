@@ -2,18 +2,19 @@
 get_header('tatuape'); ?>
 
 <div id="content">
-	<div class="container modalidades-pag">
-		<div class="row">
+	<section class="secao-a">
+		<div class="container modalidades-pag">
+			<div class="row">
 
-			<?php get_template_part('template-parts/modalidades-aside-tatuape') ?>
+				<?php get_template_part('template-parts/modalidades-aside-tatuape') ?>
 
-			<main class="col-md-8 text-left">
-				<h2>Modalidades da Unidade de Tatuapé</h2>
-			</main><!-- #main -->
+				<main class="col-md-8 text-left">
+					<h2>Modalidades da Unidade de Tatuapé</h2>
+				</main><!-- #main -->
 
-		</div><!-- .row -->
-	</div><!-- .container -->
-
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
 	<?php get_template_part( 'template-parts/contato'); ?>
 	
 	<section class="secao-a">

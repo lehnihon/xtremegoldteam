@@ -36,7 +36,7 @@ get_header(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<header class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
-										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
+										<a href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 											<?php the_post_thumbnail('home-thumb-paisagem', array(
 												'class' => "img-responsive",
 											)); ?>
@@ -61,7 +61,7 @@ get_header(); ?>
 				<div class="col-md-6">
 					<h2>Academia na Santa Clara</h2>
 					<?php 
-					$args = array('posts_per_page' => 1, 'category_name' => 'tatuape+fotos', 'orderby' => 'rand');
+					$args = array('posts_per_page' => 1, 'category_name' => 'santa-clara+fotos', 'orderby' => 'rand');
 					$query = new WP_Query( $args ); 
 					?>	
 
@@ -71,7 +71,7 @@ get_header(); ?>
 							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<header class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
-										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
+										<a href="<?php echo esc_url( home_url( '/' ))."fotos-santa-clara/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 											<?php the_post_thumbnail('home-thumb-paisagem', array(
 												'class' => "img-responsive",
 											)); ?>
