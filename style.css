@@ -230,7 +230,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   float: left;
 }
 /* line 172, _header.scss */
-#page #header .fixar {
+#page #header nav.fixar {
   position: fixed;
   z-index: 1000;
   top: 0px !important;
@@ -336,36 +336,26 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   background-color: #ffd900;
 }
-/* line 280, _header.scss */
-#page #header .fixar {
-  position: fixed;
-  z-index: 1000;
-  top: 0px !important;
-  right: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  box-shadow: 0px 5px 2px #888888;
-}
 @media (max-width: 991px) {
-  /* line 295, _header.scss */
+  /* line 285, _header.scss */
   #page #header nav.menu-aux .dados-topo {
     display: none;
   }
-  /* line 298, _header.scss */
+  /* line 288, _header.scss */
   #page #header nav.menu-aux .dados-topo-vermelho {
     display: none;
   }
-  /* line 303, _header.scss */
+  /* line 293, _header.scss */
   #page #header nav.menu-principal .menu-opcoes {
     display: none;
   }
-  /* line 306, _header.scss */
+  /* line 296, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: inline-block;
   }
 }
 @media (min-width: 992px) {
-  /* line 316, _header.scss */
+  /* line 306, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: none;
   }

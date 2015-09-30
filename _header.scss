@@ -169,7 +169,7 @@
 
     }   
 
-    .fixar {
+    nav.fixar {
         position:fixed;
         z-index: 1000;
         top: 0px !important;
@@ -277,16 +277,6 @@
         background-color:#ffd900;
     }
 
-    .fixar {
-        position:fixed;
-        z-index: 1000;
-        top: 0px !important;
-        right: 0;
-        left: 0;
-        background-color: #FFFFFF;
-        box-shadow: 0px 5px 2px #888888;
-
-    }  
 }
 
 @media (max-width: 991px) {  
