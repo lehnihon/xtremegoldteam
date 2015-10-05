@@ -109,65 +109,6 @@
 
     }
 
-    nav.menu-principal{
-    	top:38px;
-        background-color:#ffd900;
-
-        .container{
-
-            ul{
-                li{
-                    float:right;
-                    a{
-                        display: inline-block;
-                        padding:36px 30px;
-                    }
-                    a:hover{
-                        text-decoration: none;
-                        background-color:#ffe866;
-                    }
-                }
-            } 
-            .botao-menu-responsivo{
-                float:left;
-                margin-right: 20px;
-                margin-top: 12px;
-
-                .dropdown-menu{
-                    li{
-                        width: 100%;
-                        a{
-                            width: 100%;
-                            color:#606060;
-                            padding:15px;
-                        }
-                        a:hover{
-                            background-color:#f0f2f4;
-                        }
-                    }
-                }
-            }
-
-            .logo-header{
-                padding: 7px;
-                margin-right: 20px;
-            }
-
-            .search-form{
-                padding:10px;
-
-                .pesquisar-input{
-                    float:left;
-                    padding:6px;
-                }
-                .pesquisar-submit{
-                   float:left;
-                }
-            }
-       
-        } 
-
-    }   
 
     nav.fixar {
         position:fixed;
@@ -231,7 +172,7 @@
             }
 
             .search-form{
-                padding:10px;
+                padding:25px;
 
                 .pesquisar-input{
                     float:left;

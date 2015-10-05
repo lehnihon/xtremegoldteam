@@ -27,7 +27,7 @@ get_header('tatuape'); ?>
 			</div><br><br>
 			<div class="row">
 				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'videos+tatuape', 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'localidade' => 'tatuape', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 

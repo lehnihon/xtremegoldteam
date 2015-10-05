@@ -26,7 +26,7 @@ get_header(); ?>
 				<div class="col-md-6">
 					<h2>Academia no Tatuapé</h2>
 					<?php 
-					$args = array('posts_per_page' => 1, 'category_name' => 'tatuape+fotos', 'orderby' => 'rand');
+					$args = array('posts_per_page' => 1,'post_type' => 'fotos', 'localidade' => 'tatuape', 'orderby' => 'rand');
 					$query = new WP_Query( $args ); 
 					?>	
 
@@ -61,7 +61,7 @@ get_header(); ?>
 				<div class="col-md-6">
 					<h2>Academia na Santa Clara</h2>
 					<?php 
-					$args = array('posts_per_page' => 1, 'category_name' => 'santa-clara+fotos', 'orderby' => 'rand');
+					$args = array('posts_per_page' => 1, 'post_type' => 'fotos', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 					$query = new WP_Query( $args ); 
 					?>	
 
@@ -137,11 +137,7 @@ get_header(); ?>
 			<div class="row">
 
 				<?php 
-					$fotos= get_category_by_slug('fotos');
-					$videos= get_category_by_slug('videos');
-				?>
-				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'tatuape', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3, 'post_type' => 'post', 'localidade' => 'tatuape', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 
@@ -196,11 +192,7 @@ get_header(); ?>
 			<div class="row">
 
 				<?php 
-					$fotos= get_category_by_slug('fotos');
-					$videos= get_category_by_slug('videos');
-				?>
-				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'santa-clara', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3,'post_type' => 'post', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 
@@ -243,7 +235,7 @@ get_header(); ?>
 			<br><br>
 			<div class="row">
 				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'videos', 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 

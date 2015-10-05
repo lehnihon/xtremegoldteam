@@ -34,7 +34,7 @@ get_header('santa-clara'); ?>
 			<br><br>
 			<div class="row">
 				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'videos', 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 

@@ -11,7 +11,7 @@ get_header('santa-clara'); ?>
 				</div>
 			</div><!-- .row --><br><br>
 			<?php 
-			$args = array('posts_per_page' => 1, 'category_name' => 'fotos+santa-clara');
+			$args = array('posts_per_page' => 1, 'post_type' => 'fotos', 'localidade' => 'tatuape');
 			$query = new WP_Query( $args ); 
 			?>	
 			<?php if ( $query->have_posts() ) : ?>
@@ -46,7 +46,7 @@ get_header('santa-clara'); ?>
 			<br><br>
 			<div class="row">
 				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'videos+santa-clara', 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 

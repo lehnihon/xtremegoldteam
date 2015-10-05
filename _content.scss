@@ -19,6 +19,51 @@
 			}
 		}
 
+		.blog-articles{
+			ul.menu-blog{
+				padding:0;
+				li{
+					list-style: none;
+					background-color:#ffd900;
+					font-weight: bold;
+					margin:10px 0;
+					padding:10px;
+				}
+				li:first-child{
+					margin-top: 0;
+				}
+				li:hover{
+					background-color:#ffe866;
+				}
+			}
+
+			div.paginacao{
+				.page-numbers{
+					padding:5px;
+					background-color:#ececec;
+				}
+				.current{
+					background-color:#ffc700;
+				}
+			}
+
+			article{
+				text-align: left;
+				padding-bottom: 30px;
+				margin-bottom: 40px;
+				border-bottom:1px dotted black;
+
+				h2{
+					a{
+						color:#ffd900;
+					}
+				}
+			}
+			article:last-child{
+				border-bottom:none;
+			}
+		}
+
 		.modalidades{
 
 			article{

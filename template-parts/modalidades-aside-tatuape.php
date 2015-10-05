@@ -1,7 +1,21 @@
 <aside class="col-md-4">
 	<?php 
-	$Modalidades = get_category_by_slug( 'modalidades' );
-	$categories = get_categories(array('child_of' => $Modalidades->term_id, 'hide_empty'=> 0));
+	$args = array(
+		'type'                     => 'post',
+		'child_of'                 => 0,
+		'parent'                   => '',
+		'orderby'                  => 'name',
+		'order'                    => 'ASC',
+		'hide_empty'               => 1,
+		'hierarchical'             => 1,
+		'exclude'                  => '',
+		'include'                  => '',
+		'number'                   => '',
+		'taxonomy'                 => 'category',
+		'pad_counts'               => false 
+
+	); 
+	$categories = get_categories( $args ); 
 	foreach($categories as $category):
 	?> 
 		<div class="wrap-mod">
@@ -11,7 +25,7 @@
 			<div class="conteudo-mod tabela text-left" style="display:none">
 				<ul>
 				<?php 
-					$args = array( 'cat' => $category->term_id, 'category_name' => 'tatuape');
+					$args = array( 'cat' => $category->term_id, 'localidade' => 'tatuape');
 					$query = new WP_Query( $args ); 
 					?>	
 

@@ -57,17 +57,142 @@ function site_setup() {
 		'caption',
 	) );
 
-	/*
-	 * Enable support for Post Formats.
-	 * See http://codex.wordpress.org/Post_Formats
-	 */
-	add_theme_support( 'post-formats', array(
-		'aside',
-		'image',
-		'video',
-		'quote',
-		'link',
-	) );
+
+	function register_post_type_blog(){
+		$singular = 'Blog Post';
+		$plural = 'Blog Posts';
+		$labels = array(
+			'name' => $plural,
+			'singular_name' => $singular,
+			'add_new_item' => 'Adicionar novo '.$singular,
+			);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+	        'supports' => array('title', 'editor','thumbnail'),
+	        'menu_position' => 5
+			);
+
+		register_post_type('blog',$args);
+	}
+	add_action(	'init','register_post_type_blog');
+	flush_rewrite_rules();
+	function register_taxonomy_categoria(){
+	    $labels = array(
+	        'name'              => _x( 'Categoria', 'taxonomy general name' ),
+	        'singular_name'     => _x( 'Categorias', 'taxonomy singular name' ),
+	        'search_items'      => __( 'Procurar Categoria' ),
+	        'all_items'         => __( 'Todas Categorias' ),
+	        'parent_item'       => __( 'Parent Course' ),
+	        'parent_item_colon' => __( 'Parent Course:' ),
+	        'edit_item'         => __( 'Editar Categoria' ),
+	        'update_item'       => __( 'Atualizar Categoria' ),
+	        'add_new_item'      => __( 'Adicionar Categoria' ),
+	        'new_item_name'     => __( 'Nome Nova Categoria' ),
+	        'menu_name'         => __( 'Categoria' ),
+	    );
+	 
+	    $args = array(
+	        'hierarchical'      => true,
+	        'labels'            => $labels,
+	        'show_ui'           => true,
+	        'show_admin_column' => true,
+	        'query_var'         => true,
+	        'rewrite'           => array( 'slug' => 'categoria-blog' ),
+	    );
+		register_taxonomy( 'categoria_blog', 'blog', $args );
+	}
+	add_action('init','register_taxonomy_categoria');
+
+	function register_post_type_videos(){
+		$singular = 'Video';
+		$plural = 'Videos';
+		$labels = array(
+			'name' => $plural,
+			'singular_name' => $singular,
+			'add_new_item' => 'Adicionar novo '.$singular,
+			);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+	        'supports' => array('title', 'editor'),
+	        'menu_position' => 5
+			);
+
+		register_post_type('videos',$args);
+	}
+	add_action(	'init','register_post_type_videos');
+
+	function register_post_type_fotos(){
+		$singular = 'Foto';
+		$plural = 'Fotos';
+		$labels = array(
+			'name' => $plural,
+			'singular_name' => $singular,
+			'add_new_item' => 'Adicionar nova '.$singular,
+			);
+		$args = array(
+			'labels' => $labels,
+			'public' => true,
+	        'supports' => array('title', 'editor','thumbnail'),
+	        'menu_position' => 5
+			);
+
+		register_post_type('fotos',$args);
+	}
+	add_action(	'init','register_post_type_fotos');
+
+	function register_taxonomy_localidades(){
+	    $labels = array(
+	        'name'              => _x( 'Localidade', 'taxonomy general name' ),
+	        'singular_name'     => _x( 'Localidades', 'taxonomy singular name' ),
+	        'search_items'      => __( 'Procurar Localidade' ),
+	        'all_items'         => __( 'Todas Localidades' ),
+	        'parent_item'       => __( 'Parent Course' ),
+	        'parent_item_colon' => __( 'Parent Course:' ),
+	        'edit_item'         => __( 'Editar Localidade' ),
+	        'update_item'       => __( 'Atualizar Localidade' ),
+	        'add_new_item'      => __( 'Adicionar Localidade' ),
+	        'new_item_name'     => __( 'Nome Nova Localidade' ),
+	        'menu_name'         => __( 'Localidade' ),
+	    );
+	 
+	    $args = array(
+	        'hierarchical'      => true,
+	        'labels'            => $labels,
+	        'show_ui'           => true,
+	        'show_admin_column' => true,
+	        'query_var'         => true,
+	        'rewrite'           => array( 'slug' => 'localidade' ),
+	    );
+		register_taxonomy( 'localidade', array('videos','fotos','blog','post'), $args );
+	}
+	add_action('init','register_taxonomy_localidades');
+
+	function change_post_menu_label() {
+	    global $menu;
+	    global $submenu;
+	    $menu[5][0] = 'Modalidades';
+	    $submenu['edit.php'][5][0] = 'Modalidades';
+	    $submenu['edit.php'][10][0] = 'Adicionar Modalidades';
+	    echo '';
+	}
+	function change_post_object_label() {
+	        global $wp_post_types;
+	        $labels = &$wp_post_types['post']->labels;
+	        $labels->name = 'Modalidades';
+	        $labels->singular_name = 'Modalidade';
+	        $labels->add_new = 'Adicionar Modalidade';
+	        $labels->add_new_item = 'Adicionar Modalidade';
+	        $labels->edit_item = 'Editar Modalidade';
+	        $labels->new_item = 'Modalidade';
+	        $labels->view_item = 'Ver Modalidade';
+	        $labels->search_items = 'Procurar Modalidade';
+	        $labels->not_found = 'No Articles found';
+	        $labels->not_found_in_trash = 'No Articles found in Trash';
+	}
+	add_action( 'init', 'change_post_object_label' );
+	add_action( 'admin_menu', 'change_post_menu_label' );
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'site_custom_background_args', array(

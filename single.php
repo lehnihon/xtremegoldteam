@@ -5,7 +5,7 @@ get_header('page'); ?>
 	<div class="container modalidades-pag">
 		<div class="row">
 			<?php 
-			if(has_category( 'tatuape', $post )):
+			if(has_term( 'tatuape', 'localidade')):
 				get_template_part('template-parts/modalidades-aside-tatuape');
 			else:
 				get_template_part('template-parts/modalidades-aside-santa-clara');
@@ -27,8 +27,8 @@ get_header('page'); ?>
 	
 	<section class="secao-a">
 		<div class="container">	
-			<?php global $post;
-			if(has_category( 'tatuape', $post )): 
+			<?php 			
+			if(has_term( 'tatuape', 'localidade')): 
 			?>
 				<div class="row">
 					<div class="col-md-12">
@@ -38,7 +38,7 @@ get_header('page'); ?>
 				</div><br><br>
 				<div class="row">
 					<?php 
-					$args = array('posts_per_page' => 3, 'category_name' => 'videos+tatuape', 'orderby' => 'rand');
+					$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'localidade' => 'tatuape', 'orderby' => 'rand');
 					$query = new WP_Query( $args ); 
 					?>	
 
@@ -58,7 +58,7 @@ get_header('page'); ?>
 					<?php endif; ?>
 				</div><!-- .row -->
 			<?php
-			elseif(has_category( 'santa-clara', $post )): 
+			elseif(has_term( 'tatuape', 'localidade')): 
 			?>
 				<div class="row">
 					<div class="col-md-12">
@@ -68,7 +68,7 @@ get_header('page'); ?>
 				</div><br><br>
 				<div class="row">
 					<?php 
-					$args = array('posts_per_page' => 3, 'category_name' => 'videos+santa-clara', 'orderby' => 'rand');
+					$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 					$query = new WP_Query( $args ); 
 					?>	
 
