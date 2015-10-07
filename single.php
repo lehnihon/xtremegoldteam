@@ -1,28 +1,34 @@
 <?php
-get_header('page'); ?>
+if(has_term( 'tatuape', 'localidade')):
+	get_header('tatuape'); 
+else:
+	get_header('santa-clara'); 
+endif;
+?>
 
 <div id="content">
-	<div class="container modalidades-pag">
-		<div class="row">
-			<?php 
-			if(has_term( 'tatuape', 'localidade')):
-				get_template_part('template-parts/modalidades-aside-tatuape');
-			else:
-				get_template_part('template-parts/modalidades-aside-santa-clara');
-			endif;
-			?>
+	<section class="secao-a">
+		<div class="container modalidades-pag">
+			<div class="row">
+				<?php 
+				if(has_term( 'tatuape', 'localidade')):
+					get_template_part('template-parts/modalidades-aside-tatuape');
+				else:
+					get_template_part('template-parts/modalidades-aside-santa-clara');
+				endif;
+				?>
 
-			<main class="col-md-8 text-left">
-				<?php while ( have_posts() ) : the_post(); ?>
+				<main class="col-md-8 text-left">
+					<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content', 'single' ); ?>
+						<?php get_template_part( 'template-parts/content', 'single' ); ?>
 
-				<?php endwhile; // End of the loop. ?>
-			</main><!-- #main -->
+					<?php endwhile; // End of the loop. ?>
+				</main><!-- #main -->
 
-		</div><!-- .row -->
-	</div><!-- .container -->
-
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
 	<?php get_template_part( 'template-parts/contato'); ?>
 	
 	<section class="secao-a">

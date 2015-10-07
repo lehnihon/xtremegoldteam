@@ -43,9 +43,7 @@
 					<p><strong>Unidade Tatuapé</strong></p>
 					<ul>
 					<?php 
-						$fotos= get_category_by_slug('fotos');
-						$videos= get_category_by_slug('videos');
-						$args = array('posts_per_page' => 10, 'category_name' => 'tatuape', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
+						$args = array('posts_per_page' => 10, 'post_type' => 'post', 'localidade' => 'tatuape', 'orderby' => 'rand');
 						$query = new WP_Query( $args ); 
 						?>	
 
@@ -65,7 +63,7 @@
 					<?php 
 						$fotos= get_category_by_slug('fotos');
 						$videos= get_category_by_slug('videos');
-						$args = array('posts_per_page' => 10, 'category_name' => 'santa-clara', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
+						$args = array('posts_per_page' => 10, 'post_type' => 'post', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 						$query = new WP_Query( $args ); 
 						?>	
 
@@ -80,13 +78,13 @@
 					</ul>
 				</div>
 				<div class="col-md-2">
+					<p><strong>A Xtreme</strong></p>
 					<ul>
-						<li>A Xtreme</li>
-						<li>A Xtreme</li>
-						<li>A Xtreme</li>
-						<li>A Xtreme</li>
-						<li>A Xtreme</li>
-						<li>A Xtreme</li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."sobre/"; ?>">A Xtreme</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."tatuape/"; ?>">Unidade Tatuapé</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."santa-clara/"; ?>">Unidade Santa Clara</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."blog/"; ?>">Blog</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
 					</ul>
 				</div>
 			</div><!-- .row -->

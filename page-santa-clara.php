@@ -14,11 +14,7 @@ get_header('santa-clara'); ?>
 			<div class="row">
 
 				<?php 
-					$fotos= get_category_by_slug('fotos');
-					$videos= get_category_by_slug('videos');
-				?>
-				<?php 
-				$args = array('posts_per_page' => 3, 'category_name' => 'tatuape', 'category__not_in' => array($fotos->term_id,$videos->term_id), 'orderby' => 'rand');
+				$args = array('posts_per_page' => 3,  'post_type' => 'post', 'localidade' => 'santa-clara', 'orderby' => 'rand');
 				$query = new WP_Query( $args ); 
 				?>	
 

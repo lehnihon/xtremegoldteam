@@ -194,6 +194,18 @@ function site_setup() {
 	add_action( 'init', 'change_post_object_label' );
 	add_action( 'admin_menu', 'change_post_menu_label' );
 
+	function template_chooser($template)   
+	{    
+		global $wp_query;   
+		$post_type = get_query_var('post_type');   
+		if( isset($_GET['s']) && $post_type == 'blog' )   
+		{
+			return locate_template('archive-search.php');  //  redirect to archive-search.php
+		}   
+		return $template;   
+	}
+	add_filter('template_include', 'template_chooser');
+
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'site_custom_background_args', array(
 		'default-color' => 'ffffff',
