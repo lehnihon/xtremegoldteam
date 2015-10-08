@@ -9,7 +9,7 @@ get_header('santa-clara'); ?>
 				<?php get_template_part('template-parts/modalidades-aside-santa-clara') ?>
 
 				<main class="col-md-8 text-left">
-					<h2>Modalidades da Unidade de Santa Clara</h2>
+					
 				</main><!-- #main -->
 
 			</div><!-- .row -->
