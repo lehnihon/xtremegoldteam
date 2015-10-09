@@ -17,6 +17,7 @@
 	); 
 	$categories = get_categories( $args ); 
 	foreach($categories as $category):
+		if($category->name != 'Sem categoria'):
 	?> 
 		<div class="wrap-mod">
 			<div class="cabecalho-mod clearfix">
@@ -39,7 +40,9 @@
 				</ul>
 			</div>
 		</div>
-	<?php endforeach;
+	<?php 
+		endif;
+	endforeach;
 	wp_reset_query();
 	?>		
 </aside>

@@ -9,7 +9,7 @@
                 $meuMenu.removeClass('fixar');
             }
 
-            if (1250 <= $(window).scrollTop()) {
+            if (650 <= $(window).scrollTop()) {
                     $('.fade-effect-a').fadeIn(2500,function(){
                         $('.fade-effect-b').fadeIn(1000,function(){
                             $('.fade-effect-c').fadeIn(1000,function(){  

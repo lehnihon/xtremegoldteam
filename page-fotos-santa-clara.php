@@ -11,7 +11,7 @@ get_header('santa-clara'); ?>
 				</div>
 			</div><!-- .row --><br><br>
 			<?php 
-			$args = array('posts_per_page' => 1, 'post_type' => 'fotos', 'localidade' => 'tatuape');
+			$args = array('posts_per_page' => 1, 'post_type' => 'fotos', 'localidade' => 'santa-clara');
 			$query = new WP_Query( $args ); 
 			?>	
 			<?php if ( $query->have_posts() ) : ?>
