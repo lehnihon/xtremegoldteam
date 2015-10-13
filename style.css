@@ -30,19 +30,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   color: #ffd900;
 }
 /* line 32, style.scss */
+#page h1 {
+  font-size: 30px;
+}
+/* line 36, style.scss */
+#page h2 {
+  font-size: 24px;
+}
+/* line 40, style.scss */
 #page h4, #page h5, #page h6 {
   color: #232323;
 }
-/* line 36, style.scss */
+/* line 44, style.scss */
 #page a:visited, #page a:link {
   color: #606060;
 }
-/* line 40, style.scss */
+/* line 48, style.scss */
 #page a:hover {
   color: #8f8f8f;
   text-decoration: none;
 }
-/* line 45, style.scss */
+/* line 53, style.scss */
 #page .videoWrapper {
   position: relative;
   padding-bottom: 56.25%;
@@ -50,13 +58,24 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   padding-top: 25px;
   height: 0;
 }
-/* line 51, style.scss */
+/* line 59, style.scss */
 #page .videoWrapper iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+}
+/* line 67, style.scss */
+#page .contato-enviar {
+  background-color: #ffd900;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+/* line 73, style.scss */
+#page .contato-enviar:hover {
+  background-color: #ffe866;
 }
 /* line 1, _header.scss */
 #page #header {
@@ -376,77 +395,66 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page #content .secao-a .modalidades article .entry-content {
   padding: 20px 5px;
 }
-/* line 78, _content.scss */
-#page #content .secao-a .contato-enviar {
-  background-color: #ffd900;
-  border: 0;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-/* line 84, _content.scss */
-#page #content .secao-a .contato-enviar:hover {
-  background-color: #ffe866;
-}
-/* line 88, _content.scss */
+/* line 79, _content.scss */
 #page #content .secao-b {
   background-color: #323232;
   padding: 50px 0;
 }
-/* line 95, _content.scss */
+/* line 86, _content.scss */
 #page #content .duvidas-pag .wrap-duv .cabecalho-duv {
   padding: 10px;
 }
-/* line 97, _content.scss */
+/* line 88, _content.scss */
 #page #content .duvidas-pag .wrap-duv .cabecalho-duv span {
   width: 90%;
   padding: 5px 10px;
   float: left;
   font-weight: bold;
 }
-/* line 103, _content.scss */
+/* line 94, _content.scss */
 #page #content .duvidas-pag .wrap-duv .cabecalho-duv img {
   float: left;
   cursor: pointer;
 }
-/* line 109, _content.scss */
+/* line 100, _content.scss */
 #page #content .duvidas-pag .wrap-duv .conteudo-duv {
   padding: 5px;
   padding-left: 52px;
 }
-/* line 116, _content.scss */
+/* line 107, _content.scss */
 #page #content .modalidades-pag {
   margin-top: 50px;
 }
-/* line 118, _content.scss */
+/* line 109, _content.scss */
 #page #content .modalidades-pag .wrap-mod {
   margin-bottom: 10px;
 }
-/* line 121, _content.scss */
+/* line 112, _content.scss */
 #page #content .modalidades-pag .wrap-mod .cabecalho-mod {
   background-color: #ffd900;
   padding: 10px;
 }
-/* line 125, _content.scss */
+/* line 116, _content.scss */
 #page #content .modalidades-pag .wrap-mod .cabecalho-mod span {
   padding: 5px 10px;
   float: left;
   font-weight: bold;
 }
-/* line 130, _content.scss */
+/* line 121, _content.scss */
 #page #content .modalidades-pag .wrap-mod .cabecalho-mod img {
   float: right;
   cursor: pointer;
 }
-/* line 137, _content.scss */
+/* line 128, _content.scss */
 #page #content .modalidades-pag .wrap-mod .conteudo-mod ul li {
   padding: 5px;
   list-style: none;
 }
-/* line 147, _content.scss */
+/* line 138, _content.scss */
 #page #content .modalidades-pag article h3 {
   color: #232323;
 }
-/* line 154, _content.scss */
+/* line 145, _content.scss */
 #page #content .secao-sobre {
   background-image: url("images/background-luta.jpg");
   background-repeat: no-repeat;
@@ -455,45 +463,46 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   padding: 50px 0;
 }
-/* line 163, _content.scss */
+/* line 154, _content.scss */
 #page #content .secao-sobre .sobre-vf .col-md-6 {
   padding: 0;
 }
-/* line 167, _content.scss */
+/* line 158, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top {
   background-color: #ffd900;
   height: 350px;
 }
-/* line 170, _content.scss */
+/* line 161, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top img {
   width: 100%;
   max-width: 279px;
   margin-top: 70px;
 }
-/* line 176, _content.scss */
+/* line 167, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot {
   padding: 35px 50px;
   background-color: #272727;
   height: 250px;
   color: #FFFFFF;
 }
-/* line 181, _content.scss */
+/* line 172, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot strong {
   color: #ffd900;
 }
-/* line 185, _content.scss */
+/* line 176, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-right {
+  text-align: left;
   padding: 50px;
   background-color: #FFFFFF;
   height: 600px;
 }
-/* line 190, _content.scss */
+/* line 182, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-right h2 {
   color: #232323;
   font-weight: bold;
 }
 @media (max-width: 991px) {
-  /* line 201, _content.scss */
+  /* line 193, _content.scss */
   #page #page #content .secao-sobre {
     padding-bottom: 700px;
   }
@@ -599,13 +608,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: inline-block;
 }
 
-/* line 65, style.scss */
+/* line 83, style.scss */
 .e-cinza:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 70, style.scss */
+/* line 88, style.scss */
 .e-claro:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

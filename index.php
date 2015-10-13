@@ -119,8 +119,8 @@ get_header(); ?>
 				<div class="col-md-6">
 					<div class="sobre-right">
 						<h2 style="display:none" class="text-center fade-effect-c">Chegou a hora de entrar em forma.</h2><br>
-						<p style="display:none" class="fade-effect-c"><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
-						<p style="display:none" class="fade-effect-d">formulario</p>
+						<p style="display:none" class="fade-effect-c text-center"><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
+						<div style="display:none" class="fade-effect-d"><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></div>
 					</div>					
 				</div>
 			</div>

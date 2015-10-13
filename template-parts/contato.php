@@ -20,8 +20,8 @@
 			<div class="col-md-6">
 				<div class="sobre-right">
 					<h2 class="text-center">Chegou a hora de entrar em forma.</h2><br>
-					<p><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
-					<p>formulario</p>
+					<p class="text-center"><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
+					<p><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></p>
 				</div>					
 			</div>
 		</div>

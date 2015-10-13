@@ -8,7 +8,7 @@ get_header('santa-clara'); ?>
 				<div class="col-md-6 text-left">
 					<h4>Fale Conosco | Unidade Santa Clara</h4>
 					<p>Envie suas dúvidas ou sugestões, responderemos em breve!</p>
-					<p>form</p>
+					<p><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 13 ); }?></p>
 				</div>
 				<div class="col-md-6 text-left">
 					<div class="videoWrapper">

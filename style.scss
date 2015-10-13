@@ -29,6 +29,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		color: #ffd900;
 	}
 
+	h1{
+		font-size: 30px;
+	}
+
+	h2{
+		font-size:24px;
+	}
+
 	h4,h5,h6{
 		color:#232323;
 	}
@@ -56,6 +64,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	    height: 100%;
 	}	
 
+	.contato-enviar{
+		background-color:#ffd900;
+		border:0;
+		padding:10px 20px;
+		font-weight: bold;
+	}
+	.contato-enviar:hover{
+		background-color:#ffe866;
+	}
+	
 	@import 'header';
 	@import 'content';
 	@import 'footer';
