@@ -96,6 +96,7 @@ get_header(); ?>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
+	<div style="clear:both"></div>
 	<section class="secao-sobre">
 		<div class="sobre-vf container">
 			<div class="row">

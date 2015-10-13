@@ -453,11 +453,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   background-position: center;
   background-size: 100%;
   width: 100%;
-  height: 804px;
-}
-/* line 162, _content.scss */
-#page #content .secao-sobre .sobre-vf {
-  padding-top: 100px;
+  padding: 50px 0;
 }
 /* line 163, _content.scss */
 #page #content .secao-sobre .sobre-vf .col-md-6 {
@@ -495,6 +491,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page #content .secao-sobre .sobre-vf .sobre-right h2 {
   color: #232323;
   font-weight: bold;
+}
+@media (max-width: 991px) {
+  /* line 201, _content.scss */
+  #page #page #content .secao-sobre {
+    padding-bottom: 700px;
+  }
 }
 /* line 1, _footer.scss */
 #page #footer {

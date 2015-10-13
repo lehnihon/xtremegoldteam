@@ -8,7 +8,7 @@ get_header('sem-banner'); ?>
 				<div class="col-md-6 text-left">
 					<h4>Contato</h4>
 					<p>Envie suas dúvidas ou sugestões, responderemos em breve!</p>
-					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?>
+					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); } ?>
 				</div>
 				<div class="col-md-6 text-left">
 					<p><strong>Unidade Tatuapé</strong> </p>
