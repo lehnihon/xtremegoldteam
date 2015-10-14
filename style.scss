@@ -74,6 +74,23 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		background-color:#ffe866;
 	}
 	
+	.table-responsive .table tr th, .table-responsive .table tr td{
+		text-align: center;
+	}
+
+	.hover-border{
+		border:1px solid white;
+	}
+
+	.hover-border:hover{
+		border:1px solid #ffd900;
+	}
+
+	.efeito-cinza:hover{
+		-webkit-filter: grayscale(100%); 
+		filter: grayscale(100%);
+	}
+
 	@import 'header';
 	@import 'content';
 	@import 'footer';

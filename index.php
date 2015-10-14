@@ -38,7 +38,7 @@ get_header(); ?>
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 											<?php the_post_thumbnail('home-thumb-paisagem', array(
-												'class' => "img-responsive",
+												'class' => "img-responsive efeito-cinza",
 											)); ?>
 										</a>
 									<?php } ?>
@@ -73,7 +73,7 @@ get_header(); ?>
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php echo esc_url( home_url( '/' ))."fotos-santa-clara/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 											<?php the_post_thumbnail('home-thumb-paisagem', array(
-												'class' => "img-responsive",
+												'class' => "img-responsive efeito-cinza",
 											)); ?>
 										</a>
 									<?php } ?>
@@ -107,7 +107,7 @@ get_header(); ?>
 					<div class="sobre-left-bot text-left">
 						<div class="fade-effect-b" style="display:none">
 							<p><strong>Unidade Tatuapé</strong></p>
-							<p>Rua Azevedo Soares, 675 - Tatuapé<br>
+							<p>Rua Coelho Lisboa, 675 - Tatuapé<br>
 								11 3232-1732</p>	
 							<br>
 							<p><strong>Unidade Santa Clara</strong></p>
@@ -146,7 +146,7 @@ get_header(); ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 						<div class="col-md-4">
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<article class="hover-border" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<div class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
@@ -201,7 +201,7 @@ get_header(); ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 						<div class="col-md-4">
-							<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<article class="hover-border" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 								<div class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">

@@ -8,7 +8,7 @@
 				<div class="sobre-left-bot text-left">
 					<div>
 						<p><strong>Unidade Tatuapé</strong></p>
-						<p>Rua Azevedo Soares, 675 - Tatuapé<br>
+						<p>Rua Coelho Lisboa, 675 - Tatuapé<br>
 							11 3232-1732</p>	
 						<br>
 						<p><strong>Unidade Santa Clara</strong></p>
