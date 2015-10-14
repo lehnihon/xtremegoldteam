@@ -89,6 +89,36 @@
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
+		
+		<script type="text/javascript">
+
+		/* <![CDATA[ */
+
+		var google_conversion_id = 953853130;
+
+		var google_custom_params = window.google_tag_params;
+
+		var google_remarketing_only = true;
+
+		/* ]]> */
+
+		</script>
+
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+
+		</script>
+
+		<noscript>
+
+		<div style="display:inline;">
+
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/953853130/?value=0&amp;guid=ON&amp;script=0"/>
+
+		</div>
+
+		</noscript>
+
+
 	</footer><!-- #footer -->
 	<div class="copyrino">
 		<div class="container">
