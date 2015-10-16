@@ -332,9 +332,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: inline-block;
   }
+  /* line 243, _header.scss */
+  #page #header nav.menu-principal .logo-header img {
+    width: 60%;
+  }
 }
 @media (min-width: 992px) {
-  /* line 247, _header.scss */
+  /* line 255, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: none;
   }
