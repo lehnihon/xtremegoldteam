@@ -3,7 +3,7 @@ get_header('tatuape'); ?>
 
 <main id="content">
 	<section class="secao-a">
-		<div class="container">
+		<div class="container modalidades">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Unidade de Tatuapé</h1>
@@ -22,7 +22,7 @@ get_header('tatuape'); ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 						<div class="col-md-4">
-							<article class="hover-border" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<article class="hover-border" id="post-<?php the_ID(); ?>">
 								<div class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">

@@ -89,11 +89,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page .hover-border:hover {
   border: 1px solid #ffd900;
 }
-/* line 89, style.scss */
-#page .efeito-cinza:hover {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
 /* line 1, _header.scss */
 #page #header {
   position: relative;
@@ -346,7 +341,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 2, _content.scss */
 #page #content .secao-a {
   background-image: #FFFFFF;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 /* line 6, _content.scss */
 #page #content .secao-a .detalhes-unidade {
@@ -414,7 +409,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 /* line 72, _content.scss */
 #page #content .secao-a .modalidades article .entry-content {
-  padding: 20px 5px;
+  padding: 30px 10px;
 }
 /* line 79, _content.scss */
 #page #content .secao-b {
@@ -442,40 +437,36 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   padding: 5px;
   padding-left: 52px;
 }
-/* line 107, _content.scss */
-#page #content .modalidades-pag {
-  margin-top: 50px;
-}
-/* line 109, _content.scss */
+/* line 108, _content.scss */
 #page #content .modalidades-pag .wrap-mod {
   margin-bottom: 10px;
 }
-/* line 112, _content.scss */
+/* line 111, _content.scss */
 #page #content .modalidades-pag .wrap-mod .cabecalho-mod {
   background-color: #ffd900;
   padding: 10px;
 }
-/* line 116, _content.scss */
+/* line 115, _content.scss */
 #page #content .modalidades-pag .wrap-mod .cabecalho-mod span {
   padding: 5px 10px;
   float: left;
   font-weight: bold;
 }
-/* line 121, _content.scss */
+/* line 120, _content.scss */
 #page #content .modalidades-pag .wrap-mod .cabecalho-mod img {
   float: right;
   cursor: pointer;
 }
-/* line 128, _content.scss */
+/* line 127, _content.scss */
 #page #content .modalidades-pag .wrap-mod .conteudo-mod ul li {
   padding: 5px;
   list-style: none;
 }
-/* line 138, _content.scss */
+/* line 137, _content.scss */
 #page #content .modalidades-pag article h3 {
   color: #232323;
 }
-/* line 145, _content.scss */
+/* line 144, _content.scss */
 #page #content .secao-sobre {
   background-image: url("images/background-luta.jpg");
   background-repeat: no-repeat;
@@ -484,46 +475,50 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   width: 100%;
   padding: 50px 0;
 }
-/* line 154, _content.scss */
+/* line 153, _content.scss */
 #page #content .secao-sobre .sobre-vf .col-md-6 {
   padding: 0;
 }
-/* line 158, _content.scss */
+/* line 157, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top {
   background-color: #ffd900;
   height: 350px;
 }
-/* line 161, _content.scss */
+/* line 160, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top img {
   width: 100%;
   max-width: 279px;
   margin-top: 70px;
 }
-/* line 167, _content.scss */
+/* line 166, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot {
   padding: 35px 50px;
   background-color: #272727;
   height: 250px;
   color: #FFFFFF;
 }
-/* line 172, _content.scss */
+/* line 171, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot strong {
   color: #ffd900;
 }
-/* line 176, _content.scss */
+/* line 175, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-right {
   text-align: left;
   padding: 50px;
   background-color: #FFFFFF;
   height: 600px;
 }
-/* line 182, _content.scss */
+/* line 181, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-right h2 {
   color: #232323;
   font-weight: bold;
 }
+/* line 186, _content.scss */
+#page #content .secao-sobre .sobre-vf .sobre-right input[type=text] {
+  background-color: #F8F8F8;
+}
 @media (max-width: 991px) {
-  /* line 193, _content.scss */
+  /* line 196, _content.scss */
   #page #page #content .secao-sobre {
     padding-bottom: 700px;
   }
@@ -629,13 +624,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: inline-block;
 }
 
-/* line 100, style.scss */
+/* line 96, style.scss */
 .e-cinza:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 105, style.scss */
+/* line 101, style.scss */
 .e-claro:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

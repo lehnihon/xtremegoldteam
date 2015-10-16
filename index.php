@@ -38,7 +38,7 @@ get_header(); ?>
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 											<?php the_post_thumbnail('home-thumb-paisagem', array(
-												'class' => "img-responsive efeito-cinza",
+												'class' => "img-responsive e-cinza",
 											)); ?>
 										</a>
 									<?php } ?>
@@ -73,7 +73,7 @@ get_header(); ?>
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php echo esc_url( home_url( '/' ))."fotos-santa-clara/"; ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
 											<?php the_post_thumbnail('home-thumb-paisagem', array(
-												'class' => "img-responsive efeito-cinza",
+												'class' => "img-responsive e-cinza",
 											)); ?>
 										</a>
 									<?php } ?>
@@ -105,12 +105,12 @@ get_header(); ?>
 						<img style="display:none" class="fade-effect-a" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-extreme2.png"?>" />
 					</div>	
 					<div class="sobre-left-bot text-left">
-						<div class="fade-effect-b" style="display:none">
-							<p><strong>Unidade Tatuapé</strong></p>
-							<p>Rua Coelho Lisboa, 675 - Tatuapé<br>
+						<div class="fade-effect-b text-center" style="display:none">
+							<p><strong style="font-size:16px">Unidade Tatuapé</strong></p>
+							<p>Rua Azevedo Soares, 675 - Tatuapé<br>
 								11 3232-1732</p>	
 							<br>
-							<p><strong>Unidade Santa Clara</strong></p>
+							<p><strong style="font-size:16px">Unidade Santa Clara</strong></p>
 							<p>Rua Buenópolis, 134 - Santa Clara<br>
 								11 3554-7555</p>							
 						</div>		
@@ -120,7 +120,7 @@ get_header(); ?>
 					<div class="sobre-right">
 						<h2 style="display:none" class="text-center fade-effect-c">Chegou a hora de entrar em forma.</h2><br>
 						<p style="display:none" class="fade-effect-c text-center"><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
-						<div style="display:none" class="fade-effect-d"><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></div>
+						<div style="display:none" class="fade-effect-d text-center"><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></div>
 					</div>					
 				</div>
 			</div>
@@ -146,7 +146,7 @@ get_header(); ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 						<div class="col-md-4">
-							<article class="hover-border" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<article class="hover-border" id="post-<?php the_ID(); ?>">
 								<div class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">
@@ -201,7 +201,7 @@ get_header(); ?>
 					<?php /* Start the Loop */ ?>
 					<?php while ( $query->have_posts() ) : $query->the_post(); ?>
 						<div class="col-md-4">
-							<article class="hover-border" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+							<article class="hover-border"  id="post-<?php the_ID(); ?>" >
 								<div class="entry-header">
 									<?php if ( has_post_thumbnail() && !is_search() ) { ?>
 										<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( esc_html__( 'Permalink to %s', 'quark' ), the_title_attribute( 'echo=0' ) ) ); ?>">

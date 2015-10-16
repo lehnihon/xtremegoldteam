@@ -86,10 +86,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		border:1px solid #ffd900;
 	}
 
-	.efeito-cinza:hover{
-		-webkit-filter: grayscale(100%); 
-		filter: grayscale(100%);
-	}
 
 	@import 'header';
 	@import 'content';

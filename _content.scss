@@ -1,7 +1,7 @@
 #content{
 	.secao-a{
 	    background-image: #FFFFFF;
-	    padding:50px 0;
+	    padding:70px 0;
 
 		.detalhes-unidade{
 			background-color:#ffd900;
@@ -70,7 +70,7 @@
 				background-color:#f4f4f4;
 
 				.entry-content{
-					padding:20px 5px;
+					padding:30px 10px;
 				}
 			}
 		}
@@ -105,7 +105,6 @@
 	}
 
 	.modalidades-pag{
-		margin-top: 50px;
 		.wrap-mod{
 			margin-bottom: 10px;
 
@@ -182,6 +181,10 @@
 	    		h2{
 	    			color:#232323;
 	    			font-weight: bold;
+	    		}
+
+	    		input[type=text]{
+	    			background-color:#F8F8F8;
 	    		}
 	    	}
 
