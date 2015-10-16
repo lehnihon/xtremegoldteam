@@ -11,11 +11,11 @@ get_header('blog'); ?>
 				<div class="col-md-4">
 					<aside>
 						<ul class="menu-blog text-left">
-							<li><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Notícias da Xtreme Gold Team</span></a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Lutas e Treinos</span></a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Musculação e Fitness</span></a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Unidade Tatuapé</span></a></li>
-							<li><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Unidade Santa Clara</span></a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' )).'categoria-blog/noticias'; ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Notícias da Xtreme Gold Team</span></a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' )).'categoria-blog/lutas-treinos'; ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Lutas e Treinos</span></a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' )).'categoria-blog/musculacao-fitness'; ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Musculação e Fitness</span></a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' )).'categoria-blog/tatuape'; ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Unidade Tatuapé</span></a></li>
+							<li><a href="<?php echo esc_url( home_url( '/' )).'categoria-blog/santa-clara'; ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-small.png"; ?>"/><span>Unidade Santa Clara</span></a></li>
 						</ul>
 					</aside>
 				</div>
@@ -24,8 +24,6 @@ get_header('blog'); ?>
 				<div class="col-md-8">
 					<?php 
 					$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
-					$fotos= get_category_by_slug('fotos');
-					$videos= get_category_by_slug('videos');
 
 					$args = array(
 						'post_type' => 'blog',

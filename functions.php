@@ -165,7 +165,7 @@ function site_setup() {
 	        'query_var'         => true,
 	        'rewrite'           => array( 'slug' => 'localidade' ),
 	    );
-		register_taxonomy( 'localidade', array('videos','fotos','blog','post'), $args );
+		register_taxonomy( 'localidade', array('videos','fotos','post'), $args );
 	}
 	add_action('init','register_taxonomy_localidades');
 
