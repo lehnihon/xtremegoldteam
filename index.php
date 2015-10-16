@@ -105,12 +105,12 @@ get_header(); ?>
 						<img style="display:none" class="fade-effect-a" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-extreme2.png"?>" />
 					</div>	
 					<div class="sobre-left-bot text-left">
-						<div class="fade-effect-b" style="display:none">
-							<p><strong>Unidade Tatuapé</strong></p>
+						<div class="fade-effect-b text-center" style="display:none">
+							<p><strong style="font-size:16px">Unidade Tatuapé</strong></p>
 							<p>Rua Azevedo Soares, 675 - Tatuapé<br>
 								11 3232-1732</p>	
 							<br>
-							<p><strong>Unidade Santa Clara</strong></p>
+							<p><strong style="font-size:16px">Unidade Santa Clara</strong></p>
 							<p>Rua Buenópolis, 134 - Santa Clara<br>
 								11 3554-7555</p>							
 						</div>		
@@ -120,7 +120,7 @@ get_header(); ?>
 					<div class="sobre-right">
 						<h2 style="display:none" class="text-center fade-effect-c">Chegou a hora de entrar em forma.</h2><br>
 						<p style="display:none" class="fade-effect-c text-center"><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
-						<div style="display:none" class="fade-effect-d"><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></div>
+						<div style="display:none" class="fade-effect-d text-center"><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></div>
 					</div>					
 				</div>
 			</div>

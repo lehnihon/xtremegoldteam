@@ -18,10 +18,10 @@
 		<div class="row">
 			<div class="col-md-12">
 				<ul class="redes_sociais_bot">
-					<li class="youtube"><a target="_blank" href="#"></a></li>
-					<li class="instagram"><a target="_blank" href="#"></a></li>
-					<li class="twitter"><a target="_blank" href="#"></a></li>
-					<li class="facebook"><a target="_blank" href="#"></a></li>
+					<li class="youtube"><a target="_blank" href="https://www.youtube.com/user/academiaxtremegold"></a></li>
+					<li class="instagram"><a target="_blank" href="https://instagram.com/xtremegoldteamct/"></a></li>
+					<li class="twitter"><a target="_blank" href="https://twitter.com/xtremegoldteam"></a></li>
+					<li class="facebook"><a target="_blank" href="https://www.facebook.com/xtremegoldteam"></a></li>
 				</ul>		
 			</div>
 		</div><!-- .row -->
@@ -39,7 +39,7 @@
 					 <p>São equipadas com o que há de mais moderno em sua linha de aparelhos, disponibilizando aos seus alunos um ambiente 
 					 	descontraído, sofisticado, com atendimento diferenciado e com várias opções de treinamento para toda a família.</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-2 col-md-offset-1">
 					<p><strong>Unidade Tatuapé</strong></p>
 					<ul>
 					<?php 
@@ -57,7 +57,7 @@
 						<?php endif; ?>						
 					</ul>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-2">
 					<p><strong>Unidade Santa Clara</strong></p>
 					<ul>
 					<?php 

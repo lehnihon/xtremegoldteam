@@ -3,7 +3,7 @@ get_header('santa-clara'); ?>
 
 <main id="content">
 	<section class="secao-a">
-		<div class="container">
+		<div class="container modalidades">
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Unidade de Santa Clara</h1>
