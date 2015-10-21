@@ -2,10 +2,6 @@
 	position:relative;
 
     nav{
-    	position:absolute;
-    	z-index: 1000;
-    	left: 0;
-    	right: 0;
         .container{
             ul{
                 margin: 0;
@@ -223,6 +219,7 @@
 @media (max-width: 991px) {  
     #header{
         nav.menu-aux{
+            position: static;
             .dados-topo{
                 display: none;
             }   
@@ -231,6 +228,7 @@
             }               
         }
         nav.menu-principal{
+            position: static;
             .menu-opcoes{
                 display:none;
             }

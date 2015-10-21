@@ -21,7 +21,6 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 	<header id="header">
-		<?php putRevSlider( "banner-index" ) ?>
 		<nav class="menu-aux">
 			<div class="container">
 				<ul class="redes_sociais_header">
@@ -37,6 +36,8 @@
 			<?php get_template_part( 'template-parts/menu-principal' ); ?>
 			
 		</nav>
+		<?php putRevSlider( "banner-index" ) ?>
+
 		<div class="nav-buttons"></div>
 	</header><!-- #header -->
 
