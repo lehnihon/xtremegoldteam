@@ -37,7 +37,7 @@
 			<?php get_template_part( 'template-parts/menu-principal' ); ?>
 			
 		</nav>
-		<div class="container">
+		<div class="container" style="margin-top:30px">
 		<?php putRevSlider( "banner-index" ) ?>
 		</div>
 		<div class="container"><div class="nav-buttons"></div></div>
