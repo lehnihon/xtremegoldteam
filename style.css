@@ -328,9 +328,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: inline-block;
   }
+  /* line 241, _header.scss */
+  #page #header nav.menu-principal .logo-header img {
+    width: 60%;
+  }
 }
 @media (min-width: 992px) {
-  /* line 245, _header.scss */
+  /* line 253, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: none;
   }
@@ -484,8 +488,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /* line 160, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-top img {
   width: 100%;
-  max-width: 279px;
-  margin-top: 70px;
+  max-width: 450px;
+  margin-top: 100px;
 }
 /* line 166, _content.scss */
 #page #content .secao-sobre .sobre-vf .sobre-left-bot {
