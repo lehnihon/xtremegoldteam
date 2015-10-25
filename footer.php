@@ -85,6 +85,10 @@
 						<li><a href="<?php echo esc_url( home_url( '/' ))."santa-clara/"; ?>">Unidade Santa Clara</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."blog/"; ?>">Blog</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
+					</ul><br>
+					<p><strong>Parceiros</strong></p>
+					<ul>
+						<li><a href="http://www.kvrastore.com/">KVRA Store</a></li>
 					</ul>
 				</div>
 			</div><!-- .row -->

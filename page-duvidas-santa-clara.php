@@ -19,7 +19,7 @@ get_header('santa-clara'); ?>
 							<img class="botao-efeito closed img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/botao-mais.png"?>" /><span>Quanto custa para treinar na Xtreme?</span>
 						</div>
 						<div class="conteudo-duv tabela text-left" style="display:none">
-							Nossa média mensal para fechar um plano anual é a partir de R$ 74.
+							Nossa média mensal para fechar um plano anual é a partir de R$ 69
 						</div>
 					</div>
 					<div class="wrap-duv">
