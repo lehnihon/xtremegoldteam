@@ -89,6 +89,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 #page .hover-border:hover {
   border: 1px solid #ffd900;
 }
+/* line 89, style.scss */
+#page .contato-input {
+  border: 1px solid #909090;
+  padding: 5px;
+}
 /* line 1, _header.scss */
 #page #header {
   position: relative;
@@ -328,9 +333,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: inline-block;
   }
+  /* line 241, _header.scss */
+  #page #header nav.menu-principal .logo-header img {
+    width: 60%;
+  }
 }
 @media (min-width: 992px) {
-  /* line 245, _header.scss */
+  /* line 253, _header.scss */
   #page #header nav.menu-principal .botao-menu-responsivo {
     display: none;
   }
@@ -621,13 +630,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   display: inline-block;
 }
 
-/* line 96, style.scss */
+/* line 100, style.scss */
 .e-cinza:hover {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
 
-/* line 101, style.scss */
+/* line 105, style.scss */
 .e-claro:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);

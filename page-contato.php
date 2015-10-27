@@ -19,8 +19,10 @@ get_header('sem-banner'); ?>
 					<p>Rua Buenópolis, 134 - Santa Clara</p>
 					<p>São Paulo - SP</p>
 					<p>11 3554-7555</p><br>
-					<p><strong>Reclamações</strong> </p>
-					<p>ouvidoria@xtremegoldteam.com.br</p>
+					<p><strong>Reclamações Unidade Tatuapé</strong> </p>
+					<p>atendimento1@xtremegoldteam.com.br</p>
+					<br><p><strong>Reclamações Unidade Santa Clara</strong> </p>
+					<p>atendimento2@xtremegoldteam.com.br</p>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
