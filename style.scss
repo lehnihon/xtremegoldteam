@@ -38,6 +38,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		font-size:24px;
 	}
 
+	h3{
+		font-size:20px;
+	}
+
 	h4,h5,h6{
 		color:#232323;
 	}
@@ -76,10 +80,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	}
 
 	.contato-input {
-	  border: 0px;
-	  padding: 5px;
+		border: 1px solid #909090;
+	    padding: 5px;
 	}
 	
+	.contato-input-mgs{
+	  border: 1px solid #909090;
+	  padding: 5px;		
+	  height: 80px;
+	}
+
 	.table-responsive .table tr th, .table-responsive .table tr td{
 		text-align: center;
 	}
@@ -92,10 +102,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		border:1px solid #ffd900;
 	}
 
-	.contato-input{
-		border: 1px solid #909090;
-	    padding: 5px;
-	}	
 
 	@import 'header';
 	@import 'content';

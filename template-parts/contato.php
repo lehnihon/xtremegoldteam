@@ -19,8 +19,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="sobre-right">
-					<h2 class="text-center">Chegou a hora de entrar em forma.</h2><br>
-					<p class="text-center"><strong>Preencha o formulário abaixo, que entraremos em contato o mais breve.</strong></p>
+					<h3 class="text-center">Agende sua visita e participa da promoção.</h3><br>
 					<div class="text-center"><?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 8 ); } ?></div>
 				</div>					
 			</div>

@@ -174,11 +174,11 @@
 	    	}
 	    	.sobre-right{
 	    		text-align: left;
-	    		padding:50px;
+	    		padding:10px 50px;
 	    		background-color:#FFFFFF;
 	    		height: 600px;
 
-	    		h2{
+	    		h3{
 	    			color:#232323;
 	    			font-weight: bold;
 	    		}
@@ -193,9 +193,7 @@
 }
 
 @media (max-width: 991px) {  
-	#page #content .secao-sobre{
-		padding-bottom:700px;
-	}
+
 }
 
 @media (min-width: 992px) {  
