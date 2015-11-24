@@ -72,8 +72,12 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   #page .hover-border:hover {
     border: 1px solid #ffd900; }
   #page .bx-wrapper {
-    padding-left: 5px;
     margin-top: 10px; }
+    #page .bx-wrapper .bx-viewport {
+      left: 0;
+      border: 0;
+      -webkit-box-shadow: 0 0 0px #ccc;
+      box-shadow: 0 0 0px #ccc; }
   #page #header {
     position: relative; }
     #page #header nav .container ul {

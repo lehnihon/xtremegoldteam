@@ -103,8 +103,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	}
 
 	.bx-wrapper{
-		padding-left:5px;
 		margin-top:10px;
+		.bx-viewport{
+			left:0;
+			border:0;
+		-webkit-box-shadow: 0 0 0px #ccc;
+    	box-shadow: 0 0 0px #ccc;
+		}
 	}
 
 	@import 'header';
