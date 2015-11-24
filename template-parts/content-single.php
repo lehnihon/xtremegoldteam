@@ -14,12 +14,35 @@
 				'class' => "img-responsive",
 			)); ?>
 		<?php } ?>
-		
+		<div class="slider1">	
+		<?php
+	    if ( get_post_gallery() ) :
+	    $gallery = get_post_gallery( get_the_ID(), false );
+	        foreach( $gallery['src'] as $src ) : 
+		?>
+			<div class="slide"><a data-lightbox="prod" href="<?php echo $src; ?>"><img src="<?php echo $src; ?>"></a></div>
+		<?php
+            endforeach;
+        endif;
+		?>
+		</div>		
 		<?php the_title( '<h3 class="entry-title">', '</h3>' ); ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php the_content(); ?>
+		<?php echo strip_shortcodes(get_the_content()); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+<script>
+$('.slider1').bxSlider({
+    slideWidth: 200,
+    minSlides: 2,
+    maxSlides: 4,
+    slideMargin: 10,
+    controls:false,
+	onSliderLoad: function(){
+	    $(".bx-clone").children().removeAttr("data-lightbox");
+	}
+});
 
+</script>

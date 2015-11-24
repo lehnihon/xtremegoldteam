@@ -102,6 +102,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 		border:1px solid #ffd900;
 	}
 
+	.bx-wrapper{
+		padding-left:5px;
+		margin-top:10px;
+	}
 
 	@import 'header';
 	@import 'content';
