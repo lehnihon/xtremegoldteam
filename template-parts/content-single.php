@@ -30,7 +30,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php echo strip_shortcodes(get_the_content()); ?>
+		<?php echo strip_shortcodes(wpautop( get_the_content() )); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 <script>
