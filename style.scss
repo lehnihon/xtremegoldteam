@@ -90,6 +90,27 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	  height: 80px;
 	}
 
+	.free-input{
+		padding: 15px;
+		background-color:#F8F8F8;
+		border:0;
+	}
+
+	.free-submit{
+		background-color:#fdb813;
+		border:0;
+		padding:15px 40px;
+		font-weight: bold;
+		color:white;
+		font-size:16px;
+		margin-top:15px;
+	}
+
+	.free-submit:hover{
+		background-color:#ffe866;
+	}
+
+
 	.table-responsive .table tr th, .table-responsive .table tr td{
 		text-align: center;
 	}

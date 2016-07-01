@@ -75,12 +75,34 @@
 			}
 		}
 
+
 	}
 	.secao-b{
 		background-color:#323232;
 		padding:50px 0;
 	}
-	
+
+	.freepass{
+		.fundo{
+			background-color:#2c2c2c;
+			padding-top:25px;
+			padding-bottom:25px;
+		}
+
+		h1{
+			color:#232323;
+			text-align:center;
+		}
+
+		h4{
+			text-align:center;
+		}
+
+		#ninja_forms_field_37_label{
+			font-weight:normal;
+		}
+	}
+
 	.duvidas-pag{
 		.wrap-duv{
 			.cabecalho-duv{
