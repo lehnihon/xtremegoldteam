@@ -33,8 +33,7 @@
 						<li><a <?php if(is_page('localizacao-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."localizacao-tatuape/"; ?>">Localização</a></li>
 						<li><a <?php if(is_page('fotos-tatuape')): echo "class='ativo'"; endif; ?>  href="<?php echo esc_url( home_url( '/' ))."fotos-tatuape/"; ?>">Fotos</a></li>
 						<li><a <?php if(is_page('duvidas-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."duvidas-tatuape/"; ?>">Dúvidas Frequentes</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Hórários</a></li>
-						<li><a <?php if(is_page('modalidades-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Modalidades</a></li>			
+						<li><a <?php if(is_page('modalidades-tatuape')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-tatuape/"; ?>">Modalidades e Horários</a></li>			
 						<li><a class="menu-sub-header" href="#">Tatuapé</a></li>
 					</ul>
 				</div>	

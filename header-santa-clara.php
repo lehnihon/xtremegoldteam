@@ -33,8 +33,7 @@
 						<li><a <?php if(is_page('localizacao-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."localizacao-santa-clara/"; ?>">Localização</a></li>
 						<li><a <?php if(is_page('fotos-santa-clara')): echo "class='ativo'"; endif; ?>  href="<?php echo esc_url( home_url( '/' ))."fotos-santa-clara/"; ?>">Fotos</a></li>
 						<li><a <?php if(is_page('duvidas-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."duvidas-santa-clara/"; ?>">Dúvidas Frequentes</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."modalidades-santa-clara/"; ?>">Hórários</a></li>
-						<li><a <?php if(is_page('modalidades-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-santa-clara/"; ?>">Modalidades</a></li>
+						<li><a <?php if(is_page('modalidades-santa-clara')): echo "class='ativo'"; endif; ?> href="<?php echo esc_url( home_url( '/' ))."modalidades-santa-clara/"; ?>">Modalidades e Horários</a></li>
 						<li><a class="menu-sub-header" href="#">Santa Clara</a></li>
 					</ul>
 				</div>	

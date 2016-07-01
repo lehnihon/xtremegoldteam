@@ -10,11 +10,11 @@
             }
 
             if (650 <= $(window).scrollTop()) {
-                    $('.fade-effect-a').fadeIn(2500,function(){
-                        $('.fade-effect-b').fadeIn(1000,function(){
-                            $('.fade-effect-c').fadeIn(1000,function(){  
-                                $('.fade-effect-d').fadeIn(1000,function(){ 
-                                    $('.fade-effect-e').fadeIn(1000,function(){  
+                    $('.fade-effect-a').fadeIn(1000,function(){
+                        $('.fade-effect-b').fadeIn(500,function(){
+                            $('.fade-effect-c').fadeIn(500,function(){  
+                                $('.fade-effect-d').fadeIn(500,function(){ 
+                                    $('.fade-effect-e').fadeIn(500,function(){  
                                     });   
                                 });  
                             });                        

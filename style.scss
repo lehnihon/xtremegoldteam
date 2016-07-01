@@ -125,6 +125,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 	.bx-wrapper{
 		margin-top:10px;
+		margin-bottom: 30px;
 		.bx-viewport{
 			left:0;
 			border:0;
@@ -150,3 +151,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 }
 
 
+@media (max-width: 991px) {  
+	.col-md-3, .col-md-4, .col-md-5, .col-md-6{
+		margin-bottom: 50px;
+	}
+	.col-md-3:last-child, .col-md-4:last-child, .col-md-5:last-child, .col-md-6:last-child{
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 992px) {  
+
+}
