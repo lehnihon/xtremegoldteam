@@ -11,7 +11,6 @@
 			<li><a <?php if(is_page('contato')): echo 'class="ativob"'; endif; ?> href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>
 		</ul>
 	</div>
-	<span class="pull-left logo-header"><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-extreme1.png"; ?>"/></a></span>
 
 	<ul class="menu-opcoes">
 		<li><a <?php if(is_page('contato')): echo 'class="ativob"'; endif; ?> href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Contato</a></li>

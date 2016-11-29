@@ -83,7 +83,6 @@
 						<li><a href="<?php echo esc_url( home_url( '/' ))."sobre/"; ?>">A Xtreme</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."tatuape/"; ?>">Unidade Tatuapé</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."santa-clara/"; ?>">Unidade Santa Clara</a></li>
-						<li><a href="<?php echo esc_url( home_url( '/' ))."blog/"; ?>">Blog</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/' ))."contato/"; ?>">Fale Conosco</a></li>
 					</ul><br>
 					<p><strong>Parceiros</strong></p>
@@ -128,7 +127,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-10">
-					&copy; 2015 Xtreme Gold team | <a href="http://agenciarino.com.br/">Site desenvolvido pela Agência Rino.</a>
+					&copy; 2016 Xtreme Gold team | <a href="#">Site desenvolvido pelos Marketeiros Digitais</a>
 				</div>
 				<div class="col-md-2">
 					<img class="img-responsive" src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-rino.png"?>" />		

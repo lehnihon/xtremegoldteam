@@ -34,12 +34,7 @@
 
 		<nav class="menu-aux">
 			<div class="container">
-				<ul class="redes_sociais_header">
-					<li class="youtube"><a target="_blank" href="https://www.youtube.com/user/academiaxtremegold"></a></li>
-					<li class="instagram"><a target="_blank" href="https://instagram.com/xtremegoldteamct/"></a></li>
-					<li class="twitter"><a target="_blank" href="https://twitter.com/xtremegoldteam"></a></li>
-					<li class="facebook"><a target="_blank" href="https://www.facebook.com/xtremegoldteam"></a></li>
-				</ul>
+				<span class="pull-left logo-header"><a href="<?php echo esc_url( home_url( '/' )); ?>"><img src="<?php echo dirname( get_bloginfo('stylesheet_url'))."/images/logo-extreme1.png"; ?>"/></a></span>
 			</div><!-- /.container -->
 		</nav>
 		<nav class="menu-principal" id="menu-principal">
@@ -50,6 +45,5 @@
 		<div class="container" style="margin-top:30px">
 		<?php putRevSlider( "banner-index" ) ?>
 		</div>
-		<div class="container"><div class="nav-buttons"></div></div>
 	</header><!-- #header -->
 

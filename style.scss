@@ -26,12 +26,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	text-align:center;
 
 	h1,h2,h3{
-		color: #ffd900;
+		color: #353535;
 	}
 
 	h1{
 		margin-top: 0;
 		font-size: 30px;
+		font-weight:bold
 	}
 
 	h2{
@@ -72,8 +73,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	.contato-enviar{
 		background-color:#ffd900;
 		border:0;
-		padding:10px 20px;
+		padding:20px;
+		width:100%;
 		font-weight: bold;
+		color:#606060;
 	}
 	.contato-enviar:hover{
 		background-color:#ffe866;
@@ -81,7 +84,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
 	.contato-input {
 		border: 1px solid #909090;
-	    padding: 5px;
+	    padding:15px;
+	    background-color:white;
+	    color:#606060;
 	}
 	
 	.contato-input-mgs{

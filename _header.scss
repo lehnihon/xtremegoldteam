@@ -26,6 +26,7 @@
     }
 
     nav.menu-aux{
+        padding:20px;
     	top:0;
         .dados-topo{
             padding-left:0;
@@ -46,63 +47,6 @@
             }     
         }
 
-        .redes_sociais_header{
-            margin-top: 10px;
-            margin-bottom: 5px;
-            height: 22px;
-            text-align: left;
-            list-style:none;
-            float:right;
-            padding-left: 10px;
-        }
-
-        .redes_sociais_header li:hover{
-            opacity: 0.6;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-        }
-
-        .redes_sociais_header a{
-            display: inline-block;
-            width:22px;
-            height:20px;
-        }
-
-        .redes_sociais_header .youtube{
-            background-image: url("images/redes-sociais1.png");
-            background-position: 5px,center;
-            background-repeat:no-repeat;
-            width:22px;
-            height:20px;
-            display:inline-block;       
-        }
-
-        .redes_sociais_header .instagram{
-            background-image: url("images/redes-sociais1.png");
-            background-position: -29px,center;
-            background-repeat:no-repeat;
-            width:22px;
-            height:20px;
-            display:inline-block;       
-        }
-
-        .redes_sociais_header .twitter{
-            background-image: url("images/redes-sociais1.png");
-            background-position: -64px,center;
-            background-repeat:no-repeat;
-            width:22px;
-            height:20px;
-            display:inline-block;       
-        }
-
-        .redes_sociais_header .facebook{
-            background-image: url("images/redes-sociais1.png");
-            background-position: -100px,center;
-            background-repeat:no-repeat;
-            width:22px;
-            height:20px;
-            display:inline-block;       
-        }
-
     }
 
 
@@ -119,7 +63,7 @@
 
     nav.menu-principal{
         top:38px;
-        background-color:#ffd900;
+        background-color:#323232;
 
         .container{
 
@@ -127,15 +71,16 @@
                 li{
                     float:right;
                     a{
+                        color:#FFFFFF;
                         display: inline-block;
-                        padding:36px 30px;
+                        padding:15px 30px;
                     }
                     a:hover{
+                        background-color:#5a5a5a;
                         text-decoration: none;
-                        background-color:#ffe866;
                     }
                     a.ativob{
-                         background-color:#ffe866;
+                        background-color:#5a5a5a;
                     }
                 }
             } 
@@ -182,15 +127,15 @@
        
         } 
         .menu-principal-sub{
-            background-color:#323232;
+            background-color:#ffd900;
             ul.menu-sub{
                 li{
                     a{
                         padding:15px;
-                        color:#FFFFFF;
+                        color:#606060;
                     }
                     a:hover{
-                        background-color:#5a5a5a;
+                        background-color:#ffe866;
                     }
                     a.menu-sub-header{
                         color: #ffd900;
@@ -200,7 +145,7 @@
                         cursor: default;
                     }
                     a.ativo{
-                         background-color:#5a5a5a;
+                        background-color:#ffe866;
                     }
 
                 }
