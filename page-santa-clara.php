@@ -62,8 +62,9 @@ get_header('santa-clara'); ?>
 			<br><br>
 			<div class="row">
 				<?php 
-				$args = array('posts_per_page' => 3, 'post_type' => 'videos', 'localidade' => 'santa-clara', 'orderby' => 'rand');
-				$query = new WP_Query( $args ); 
+				$args = array('posts_per_page' => 6, 'post_type' => 'videos', 'localidade' => 'santa-clara', 'orderby' => 'rand');
+				$query = new WP_Query( $args );
+				$i = 0;
 				?>	
 
 				<?php if ( $query->have_posts() ) : ?>
@@ -78,7 +79,14 @@ get_header('santa-clara'); ?>
 								</div>
 							</article><!-- #post-## -->
 						</div>
-					<?php endwhile; ?>
+					<?php 
+						$i++;
+						if($i % 3 == 0):
+					?>
+						</div><br><div class="row">
+					<?php
+						endif; 
+						endwhile; ?>
 				<?php endif; ?>
 			</div><!-- .row -->
 		</div><!-- .container -->

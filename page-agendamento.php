@@ -6,18 +6,17 @@ get_header('sem-banner'); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h1>Reclamações e Sugestões</h1>
-					<p>Seus relatos são de extreme importância para melhorar e manter a qualidade da nossa academia!</p><br>
+					<h1>Chegou a hora de entrar em forma.</h1>
+					<p>Prencha o formulário abaixo e agenda sua aula experimental agora mesmo! </p><br>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-left">
-					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 6 ); } ?>
+					<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 22 ); } ?>
 				</div>
 			</div><!-- .row -->
 		</div><!-- .container -->
 	</section>
-
 
 </main><!-- #content -->
 

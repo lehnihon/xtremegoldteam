@@ -19,7 +19,6 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 */
-/* line 23, style.scss */
 #page {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #606060;
@@ -145,12 +144,16 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
         #page #header nav.menu-principal .container ul li a {
           color: #FFFFFF;
           display: inline-block;
-          padding: 15px 30px; }
+          padding: 15px 15px; }
         #page #header nav.menu-principal .container ul li a:hover {
           background-color: #5a5a5a;
           text-decoration: none; }
         #page #header nav.menu-principal .container ul li a.ativob {
           background-color: #5a5a5a; }
+      #page #header nav.menu-principal .container ul li.esq {
+        float: left; }
+      #page #header nav.menu-principal .container ul li.dir {
+        float: right; }
       #page #header nav.menu-principal .container .botao-menu-responsivo {
         float: left;
         margin-right: 20px;
@@ -359,682 +362,46 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     filter: alpha(opacity=60);
     /* For IE8 and earlier */ }
   #page .redes_sociais_bot a {
-  text-align: center;
-}
-/* line 28, style.scss */
-#page h1, #page h2, #page h3 {
-  color: #ffd900;
-}
-/* line 32, style.scss */
-#page h1 {
-  margin-top: 0;
-  font-size: 30px;
-}
-/* line 37, style.scss */
-#page h2 {
-  font-size: 24px;
-}
-/* line 41, style.scss */
-#page h3 {
-  font-size: 20px;
-}
-/* line 45, style.scss */
-#page h4, #page h5, #page h6 {
-  color: #232323;
-}
-/* line 49, style.scss */
-#page a:visited, #page a:link {
-  color: #606060;
-}
-/* line 53, style.scss */
-#page a:hover {
-  color: #8f8f8f;
-  text-decoration: none;
-}
-/* line 58, style.scss */
-#page .videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  padding-top: 25px;
-  height: 0;
-}
-/* line 64, style.scss */
-#page .videoWrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 72, style.scss */
-#page .contato-enviar {
-  background-color: #ffd900;
-  border: 0;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-/* line 78, style.scss */
-#page .contato-enviar:hover {
-  background-color: #ffe866;
-}
-/* line 82, style.scss */
-#page .contato-input {
-  border: 1px solid #909090;
-  padding: 5px;
-}
-/* line 87, style.scss */
-#page .contato-input-mgs {
-  border: 1px solid #909090;
-  padding: 5px;
-  height: 80px;
-}
-/* line 93, style.scss */
-#page .free-input {
-  padding: 15px;
-  background-color: #F8F8F8;
-  border: 0;
-}
-/* line 99, style.scss */
-#page .free-submit {
-  background-color: #fdb813;
-  border: 0;
-  padding: 15px 40px;
-  font-weight: bold;
-  color: white;
-  font-size: 16px;
-  margin-top: 15px;
-}
-/* line 109, style.scss */
-#page .free-submit:hover {
-  background-color: #ffe866;
-}
-/* line 114, style.scss */
-#page .table-responsive .table tr th, #page .table-responsive .table tr td {
-  text-align: center;
-}
-/* line 118, style.scss */
-#page .hover-border {
-  border: 1px solid white;
-}
-/* line 122, style.scss */
-#page .hover-border:hover {
-  border: 1px solid #ffd900;
-}
-/* line 126, style.scss */
-#page .bx-wrapper {
-  margin-top: 10px;
-  margin-bottom: 30px;
-}
-/* line 129, style.scss */
-#page .bx-wrapper .bx-viewport {
-  left: 0;
-  border: 0;
-  -webkit-box-shadow: 0 0 0px #ccc;
-  box-shadow: 0 0 0px #ccc;
-}
-/* line 1, _header.scss */
-#page #header {
-  position: relative;
-}
-/* line 6, _header.scss */
-#page #header nav .container ul {
-  margin: 0;
-}
-/* line 8, _header.scss */
-#page #header nav .container ul li {
-  list-style: none;
-}
-/* line 11, _header.scss */
-#page #header nav .container ul li a {
-  display: inline-block;
-  padding: 10px;
-  color: #232323;
-  font-weight: bold;
-}
-/* line 23, _header.scss */
-#page #header nav.pos-fix {
-  position: static;
-  z-index: 0;
-}
-/* line 28, _header.scss */
-#page #header nav.menu-aux {
-  top: 0;
-}
-/* line 30, _header.scss */
-#page #header nav.menu-aux .dados-topo {
-  padding-left: 0;
-}
-/* line 33, _header.scss */
-#page #header nav.menu-aux .dados-topo li {
-  float: left;
-  padding: 10px;
-  color: #FFFFFF;
-  font-size: small;
-}
-/* line 40, _header.scss */
-#page #header nav.menu-aux .dados-topo-vermelho {
-  padding-left: 0;
-}
-/* line 42, _header.scss */
-#page #header nav.menu-aux .dados-topo-vermelho li {
-  padding: 10px;
-  color: #9e151a;
-  font-size: small;
-}
-/* line 49, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  height: 22px;
-  text-align: left;
-  list-style: none;
-  float: right;
-  padding-left: 10px;
-}
-/* line 59, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header li:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  /* For IE8 and earlier */
-}
-/* line 64, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header a {
-  display: inline-block;
-  width: 22px;
-  height: 20px;
-}
-/* line 70, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header .youtube {
-  background-image: url("images/redes-sociais1.png");
-  background-position: 5px,center;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 20px;
-  display: inline-block;
-}
-/* line 79, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header .instagram {
-  background-image: url("images/redes-sociais1.png");
-  background-position: -29px,center;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 20px;
-  display: inline-block;
-}
-/* line 88, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header .twitter {
-  background-image: url("images/redes-sociais1.png");
-  background-position: -64px,center;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 20px;
-  display: inline-block;
-}
-/* line 97, _header.scss */
-#page #header nav.menu-aux .redes_sociais_header .facebook {
-  background-image: url("images/redes-sociais1.png");
-  background-position: -100px,center;
-  background-repeat: no-repeat;
-  width: 22px;
-  height: 20px;
-  display: inline-block;
-}
-/* line 109, _header.scss */
-#page #header nav.fixar {
-  position: fixed;
-  z-index: 1000;
-  top: 0px !important;
-  right: 0;
-  left: 0;
-  background-color: #FFFFFF;
-  box-shadow: 0px 5px 2px #888888;
-}
-/* line 120, _header.scss */
-#page #header nav.menu-principal {
-  top: 38px;
-  background-color: #ffd900;
-}
-/* line 127, _header.scss */
-#page #header nav.menu-principal .container ul li {
-  float: right;
-}
-/* line 129, _header.scss */
-#page #header nav.menu-principal .container ul li a {
-  display: inline-block;
-  padding: 36px 30px;
-}
-/* line 133, _header.scss */
-#page #header nav.menu-principal .container ul li a:hover {
-  text-decoration: none;
-  background-color: #ffe866;
-}
-/* line 137, _header.scss */
-#page #header nav.menu-principal .container ul li a.ativob {
-  background-color: #ffe866;
-}
-/* line 142, _header.scss */
-#page #header nav.menu-principal .container .botao-menu-responsivo {
-  float: left;
-  margin-right: 20px;
-  margin-top: 12px;
-}
-/* line 148, _header.scss */
-#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li {
-  width: 100%;
-}
-/* line 150, _header.scss */
-#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a {
-  width: 100%;
-  color: #606060;
-  padding: 15px;
-}
-/* line 155, _header.scss */
-#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a:hover {
-  background-color: #f0f2f4;
-}
-/* line 158, _header.scss */
-#page #header nav.menu-principal .container .botao-menu-responsivo .dropdown-menu li a.ativob {
-  background-color: #f0f2f4;
-}
-/* line 165, _header.scss */
-#page #header nav.menu-principal .container .logo-header {
-  padding: 7px;
-  margin-right: 20px;
-}
-/* line 170, _header.scss */
-#page #header nav.menu-principal .container .search-form {
-  padding: 25px;
-}
-/* line 173, _header.scss */
-#page #header nav.menu-principal .container .search-form .pesquisar-input {
-  float: left;
-  padding: 9px;
-  border: 0;
-}
-/* line 178, _header.scss */
-#page #header nav.menu-principal .container .search-form .pesquisar-submit {
-  float: left;
-}
-/* line 184, _header.scss */
-#page #header nav.menu-principal .menu-principal-sub {
-  background-color: #323232;
-}
-/* line 188, _header.scss */
-#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a {
-  padding: 15px;
-  color: #FFFFFF;
-}
-/* line 192, _header.scss */
-#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a:hover {
-  background-color: #5a5a5a;
-}
-/* line 195, _header.scss */
-#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a.menu-sub-header {
-  color: #ffd900;
-}
-/* line 198, _header.scss */
-#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a.menu-sub-header:hover {
-  background-color: transparent;
-  cursor: default;
-}
-/* line 202, _header.scss */
-#page #header nav.menu-principal .menu-principal-sub ul.menu-sub li a.ativo {
-  background-color: #5a5a5a;
-}
-/* line 212, _header.scss */
-#page #header .nav-buttons {
-  height: 60px;
-  width: 100%;
-  background-color: #ffd900;
-}
-@media (max-width: 991px) {
-  /* line 222, _header.scss */
-  #page #header nav.menu-aux {
-    position: static;
-  }
-  /* line 224, _header.scss */
-  #page #header nav.menu-aux .dados-topo {
-    display: none;
-  }
-  /* line 227, _header.scss */
-  #page #header nav.menu-aux .dados-topo-vermelho {
-    display: none;
-  }
-  /* line 231, _header.scss */
-  #page #header nav.menu-principal {
-    position: static;
-  }
-  /* line 233, _header.scss */
-  #page #header nav.menu-principal .menu-opcoes {
-    display: none;
-  }
-  /* line 236, _header.scss */
-  #page #header nav.menu-principal .botao-menu-responsivo {
     display: inline-block;
-  }
-  /* line 242, _header.scss */
-  #page #header nav.menu-principal .logo-header img {
-    width: 60%;
-  }
-}
-@media (min-width: 992px) {
-  /* line 254, _header.scss */
-  #page #header nav.menu-principal .botao-menu-responsivo {
-    display: none;
-  }
-}
-/* line 2, _content.scss */
-#page #content .secao-a {
-  background-image: #FFFFFF;
-  padding: 50px 0;
-}
-/* line 6, _content.scss */
-#page #content .secao-a .detalhes-unidade {
-  background-color: #ffd900;
-  padding: 20px;
-}
-/* line 10, _content.scss */
-#page #content .secao-a .detalhes-unidade .detalhe-unidade-esq {
-  float: left;
-  width: 70%;
-}
-/* line 14, _content.scss */
-#page #content .secao-a .detalhes-unidade .detalhe-unidade-dir {
-  padding-top: 20px;
-  float: left;
-  width: 30%;
-}
-/* line 23, _content.scss */
-#page #content .secao-a .blog-articles ul.menu-blog {
-  padding: 0;
-}
-/* line 25, _content.scss */
-#page #content .secao-a .blog-articles ul.menu-blog li {
-  list-style: none;
-  background-color: #ffd900;
-  font-weight: bold;
-  margin: 10px 0;
-  padding: 10px;
-}
-/* line 32, _content.scss */
-#page #content .secao-a .blog-articles ul.menu-blog li:first-child {
-  margin-top: 0;
-}
-/* line 35, _content.scss */
-#page #content .secao-a .blog-articles ul.menu-blog li:hover {
-  background-color: #ffe866;
-}
-/* line 41, _content.scss */
-#page #content .secao-a .blog-articles div.paginacao .page-numbers {
-  padding: 5px;
-  background-color: #ececec;
-}
-/* line 45, _content.scss */
-#page #content .secao-a .blog-articles div.paginacao .current {
-  background-color: #ffc700;
-}
-/* line 50, _content.scss */
-#page #content .secao-a .blog-articles article {
-  text-align: left;
-  padding-bottom: 30px;
-  margin-bottom: 40px;
-  border-bottom: 1px dotted black;
-}
-/* line 57, _content.scss */
-#page #content .secao-a .blog-articles article h2 a {
-  color: #ffd900;
-}
-/* line 62, _content.scss */
-#page #content .secao-a .blog-articles article:last-child {
-  border-bottom: none;
-}
-/* line 69, _content.scss */
-#page #content .secao-a .modalidades article {
-  background-color: #f4f4f4;
-}
-/* line 72, _content.scss */
-#page #content .secao-a .modalidades article .entry-content {
-  padding: 30px 10px;
-}
-/* line 80, _content.scss */
-#page #content .secao-b {
-  background-color: #323232;
-  padding: 50px 0;
-}
-/* line 86, _content.scss */
-#page #content .freepass .fundo {
-  background-color: #2c2c2c;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-/* line 92, _content.scss */
-#page #content .freepass h1 {
-  color: #232323;
-  text-align: center;
-}
-/* line 97, _content.scss */
-#page #content .freepass h4 {
-  text-align: center;
-}
-/* line 101, _content.scss */
-#page #content .freepass #ninja_forms_field_37_label {
-  font-weight: normal;
-}
-/* line 108, _content.scss */
-#page #content .duvidas-pag .wrap-duv .cabecalho-duv {
-  padding: 10px;
-}
-/* line 110, _content.scss */
-#page #content .duvidas-pag .wrap-duv .cabecalho-duv span {
-  width: 90%;
-  padding: 5px 10px;
-  float: left;
-  font-weight: bold;
-}
-/* line 116, _content.scss */
-#page #content .duvidas-pag .wrap-duv .cabecalho-duv img {
-  float: left;
-  cursor: pointer;
-}
-/* line 122, _content.scss */
-#page #content .duvidas-pag .wrap-duv .conteudo-duv {
-  padding: 5px;
-  padding-left: 52px;
-}
-/* line 130, _content.scss */
-#page #content .modalidades-pag .wrap-mod {
-  margin-bottom: 10px;
-}
-/* line 133, _content.scss */
-#page #content .modalidades-pag .wrap-mod .cabecalho-mod {
-  background-color: #ffd900;
-  padding: 10px;
-}
-/* line 137, _content.scss */
-#page #content .modalidades-pag .wrap-mod .cabecalho-mod span {
-  padding: 5px 10px;
-  float: left;
-  font-weight: bold;
-}
-/* line 142, _content.scss */
-#page #content .modalidades-pag .wrap-mod .cabecalho-mod img {
-  float: right;
-  cursor: pointer;
-}
-/* line 149, _content.scss */
-#page #content .modalidades-pag .wrap-mod .conteudo-mod ul li {
-  padding: 5px;
-  list-style: none;
-}
-/* line 159, _content.scss */
-#page #content .modalidades-pag article h3 {
-  color: #232323;
-}
-/* line 166, _content.scss */
-#page #content .secao-sobre {
-  background-image: url("images/background-luta.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  width: 100%;
-  padding: 50px 0;
-}
-/* line 175, _content.scss */
-#page #content .secao-sobre .sobre-vf .col-md-6 {
-  padding: 0;
-}
-/* line 179, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-left-top {
-  background-color: #ffd900;
-  height: 350px;
-}
-/* line 182, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-left-top img {
-  width: 100%;
-  max-width: 450px;
-  margin-top: 100px;
-}
-/* line 188, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-left-bot {
-  padding: 35px 50px;
-  background-color: #272727;
-  height: 250px;
-  color: #FFFFFF;
-}
-/* line 193, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-left-bot strong {
-  color: #ffd900;
-}
-/* line 197, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-right {
-  text-align: left;
-  padding: 10px 50px;
-  background-color: #FFFFFF;
-  height: 600px;
-}
-/* line 203, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-right h3 {
-  color: #232323;
-  font-weight: bold;
-}
-/* line 208, _content.scss */
-#page #content .secao-sobre .sobre-vf .sobre-right input[type=text] {
-  background-color: #F8F8F8;
-}
-/* line 1, _footer.scss */
-#page #footer {
-  background-color: #323232;
-  padding: 50px 0;
-  color: #FFFFFF;
-  text-align: left;
-}
-/* line 8, _footer.scss */
-#page #footer .container ul {
-  padding: 0;
-}
-/* line 10, _footer.scss */
-#page #footer .container ul li {
-  list-style: none;
-}
-/* line 12, _footer.scss */
-#page #footer .container ul li a {
-  color: #FFFFFF;
-}
-/* line 15, _footer.scss */
-#page #footer .container ul li a:hover {
-  color: #ffd900;
-}
-/* line 21, _footer.scss */
-#page #footer .container p strong {
-  color: #ffd900;
-}
-/* line 28, _footer.scss */
-#page .copyrino {
-  color: #FFFFFF;
-  background-color: #ffd900;
-  padding: 5px 0;
-}
-/* line 32, _footer.scss */
-#page .copyrino .col-md-10 {
-  padding: 12px;
-}
-/* line 34, _footer.scss */
-#page .copyrino .col-md-10 a {
-  color: #FFFFFF;
-}
-/* line 40, _footer.scss */
-#page .redes_sociais_bot {
-  margin-bottom: 5px;
-  height: 67px;
-  text-align: left;
-  list-style: none;
-  margin: 0 auto;
-  margin-top: 30px;
-  width: 310px;
-  padding: 0;
-}
-/* line 51, _footer.scss */
-#page .redes_sociais_bot li:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-  /* For IE8 and earlier */
-}
-/* line 56, _footer.scss */
-#page .redes_sociais_bot a {
-  display: inline-block;
-  width: 67px;
-  height: 67px;
-}
-/* line 62, _footer.scss */
-#page .redes_sociais_bot .youtube {
-  background-image: url("images/redes-sociais2.png");
-  background-position: left,center;
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
-  display: inline-block;
-}
-/* line 71, _footer.scss */
-#page .redes_sociais_bot .instagram {
-  background-image: url("images/redes-sociais2.png");
-  background-position: -80px,center;
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
-  display: inline-block;
-}
-/* line 80, _footer.scss */
-#page .redes_sociais_bot .twitter {
-  background-image: url("images/redes-sociais2.png");
-  background-position: -160px,center;
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
-  display: inline-block;
-}
-/* line 89, _footer.scss */
-#page .redes_sociais_bot .facebook {
-  background-image: url("images/redes-sociais2.png");
-  background-position: right,center;
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 67px;
-  display: inline-block;
-}
+    width: 67px;
+    height: 67px; }
+  #page .redes_sociais_bot .youtube {
+    background-image: url("images/redes-sociais2.png");
+    background-position: left,center;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 67px;
+    display: inline-block; }
+  #page .redes_sociais_bot .instagram {
+    background-image: url("images/redes-sociais2.png");
+    background-position: -80px,center;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 67px;
+    display: inline-block; }
+  #page .redes_sociais_bot .twitter {
+    background-image: url("images/redes-sociais2.png");
+    background-position: -160px,center;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 67px;
+    display: inline-block; }
+  #page .redes_sociais_bot .facebook {
+    background-image: url("images/redes-sociais2.png");
+    background-position: right,center;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 67px;
+    display: inline-block; }
 
-/* line 143, style.scss */
 .e-cinza:hover {
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}
+  filter: grayscale(100%); }
 
-/* line 148, style.scss */
 .e-claro:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
-  /* For IE8 and earlier */
-}
+  /* For IE8 and earlier */ }
 
 @media (max-width: 991px) {
   .col-md-3, .col-md-4, .col-md-5, .col-md-6 {
@@ -1042,17 +409,5 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
   .col-md-3:last-child, .col-md-4:last-child, .col-md-5:last-child, .col-md-6:last-child {
     margin-bottom: 20px; } }
-
-@media (max-width: 991px) {
-  /* line 155, style.scss */
-  .col-md-3, .col-md-4, .col-md-5, .col-md-6 {
-    margin-bottom: 50px;
-  }
-
-  /* line 158, style.scss */
-  .col-md-3:last-child, .col-md-4:last-child, .col-md-5:last-child, .col-md-6:last-child {
-    margin-bottom: 20px;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
